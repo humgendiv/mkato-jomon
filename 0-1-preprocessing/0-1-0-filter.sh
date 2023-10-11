@@ -11,3 +11,5 @@ OUTPUT_DIR="/home1/mkato/hdd_data/data/0-1-filtered_vcf"
 mkdir -p $OUTPUT_DIR
 
 bcftools filter -e 'INFO/DP<10 || INFO/DP>100' -Oz -o $OUTPUT_DIR/${SAMPLE}_filtered.vcf.gz $DIR/${SAMPLE}.vcf.gz
+bcftools filter -e 'QUAL<30' -Oz -o $OUTPUT_DIR/${SAMPLE}_filtered2.vcf.gz $OUTPUT_DIR/${SAMPLE}_filtered.vcf.gz
+tabix -p vcf $OUTPUT_DIR/${SAMPLE}_filtered2.vcf.gz
