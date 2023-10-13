@@ -8,4 +8,4 @@ DIR=/home1/mkato/hdd_data/data/
 INPUT_DIR=${DIR}/0-1-filtered_vcf
 OUTPUT_DIR=${DIR}/0-2-plink
 
-/usr/local/bin/plink --make-bed --allow-extra-chr --vcf ${INPUT_DIR}/${SAMPLE}_filtered2.vcf.gz --out ${OUTPUT_DIR}/${SAMPLE}
+/usr/local/bin/plink --make-bed --allow-extra-chr --vcf ${INPUT_DIR}/${SAMPLE}_filtered2.vcf.gz --out ${OUTPUT_DIR}/${SAMPLE} --memory 90000
