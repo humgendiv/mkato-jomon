@@ -1,0 +1,1 @@
+python3 /home/mkato/mkato-jomon/0-1-preprocessing/0-1-0-3-make_ID_CHRPOS.py
