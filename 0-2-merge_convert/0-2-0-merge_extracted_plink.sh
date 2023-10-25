@@ -33,4 +33,5 @@ rm output.txt
 rm output.tmp.txt
 rm "${folder_path}/m_${bed_folder}.missnp"
 find "$folder_path" -name "*tmp*" -type f -delete
+mkdir ../0-4-merge_and_convert
 mv ${folder_path}/m_* ../0-4-merge_and_convert/

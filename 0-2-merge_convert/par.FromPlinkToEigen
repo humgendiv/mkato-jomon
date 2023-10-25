@@ -1,0 +1,8 @@
+genotypename: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.bed
+snpname: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.bim
+indivname: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.fam
+outputformat: EIGENSTRAT
+genotypeoutname: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.geno
+snpoutname: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.snp
+indivoutname: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.ind
+pordercheck: NO
