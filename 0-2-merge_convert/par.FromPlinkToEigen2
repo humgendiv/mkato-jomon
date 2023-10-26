@@ -1,0 +1,8 @@
+genotypename: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.bed
+snpname: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.bim
+indivname: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.fam
+outputformat: EIGENSTRAT
+genotypeoutname: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.geno
+snpoutname: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.snp
+indivoutname: /home/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.ind
+pordercheck: NO

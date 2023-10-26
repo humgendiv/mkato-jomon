@@ -1,8 +1,8 @@
 geno1: /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.geno
 snp1:  /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.snp
 ind1:  /home1/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.ind
-geno2: /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.geno
-snp2:  /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.snp
+geno2: /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.geno
+snp2:  /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.snp
 ind2:  /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.ind
 genooutfilename: /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.geno
 snpoutfilename:      /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.snp
