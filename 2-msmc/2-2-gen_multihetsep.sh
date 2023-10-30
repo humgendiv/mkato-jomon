@@ -11,8 +11,6 @@
 #$ -S /bin/bash
 
 DATADIR=/home/mkato/hdd_data/data/2-msmc/
-#chr=$1
-
 OUTDIR="${DATADIR}/msmc_input_file"
 
 ref_mask="/home/mkato/hdd_data/data/reference/ref_masks/hs37d5_chr${chr}.mask.bed"
