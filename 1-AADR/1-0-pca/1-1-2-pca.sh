@@ -1,0 +1,11 @@
+smartpca -i /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.geno \
+-a /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.snp \
+-b /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.ind \
+-k 4 \
+-o /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/jomon_aadr_asia.evec.txt \
+-p /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/jomon_aadr_asia.plot.txt \
+-e /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/jomon_aadr_asia.eval.txt \
+-l /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/jomon_aadr_asia.log \
+-m 0 \
+-t 10 \
+-w /home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/asia_poplist.txt \
