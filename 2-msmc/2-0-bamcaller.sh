@@ -11,11 +11,13 @@
 #$ -S /bin/bash
 
 DATADIR=/home/mkato/hdd_data/data/
-OUTDIR=${DATADIR}/2-msmc
+OUTDIR=${DATADIR}/2-msmc/$sample_name/
 
-sample_name=$1
-depth=$2 # 予め算出してあるaverage depth
-chr=$3
 
-bcftools mpileup -q 20 -Q 20 -C 50 -r "chr${3}" -f "${DATADIR}reference/hg19.fa" "$DATADIR/bam/$1.bam" | bcftools call -c -V indels |
-/home/mkato/Repo/msmc/msmc-tools/bamCaller.py $depth "${OUTDIR}/${1}_chr${3}_mask.bed.gz" | gzip -c > "${OUTDIR}/${1}_chr${3}.vcf.gz"
+if [ "$sample_name" = "T5" ]; then
+/usr/bin/bcftools mpileup -q 20 -Q 20 -C 50 -Ou -r "chr${chr}" -f "${DATADIR}reference/hg19.fa" "$DATADIR/bam/share/T5_p1_p2_p3.bam" | bcftools call -c -V indels |
+/home/mkato/Repo/msmc/msmc-tools/bamCaller.py $depth "${OUTDIR}/${sample_name}_chr${chr}_mask.bed.gz" | gzip -c > "${OUTDIR}/${sample_name}_chr${chr}.vcf.gz"
+elif [ "$sample_name" = "I4" ]; then
+/usr/bin/bcftools mpileup -q 20 -Q 20 -C 50 -Ou -r "chr${chr}" -f "${DATADIR}reference/hg19.fa" "$DATADIR/bam/share/I4_filtered_RG_dedup_trim.bam" | bcftools call -c -V indels |
+/home/mkato/Repo/msmc/msmc-tools/bamCaller.py $depth "${OUTDIR}/${sample_name}_chr${chr}_mask.bed.gz" | gzip -c > "${OUTDIR}/${sample_name}_chr${chr}.vcf.gz"
+fi

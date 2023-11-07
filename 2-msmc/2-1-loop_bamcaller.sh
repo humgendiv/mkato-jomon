@@ -1,9 +1,7 @@
 for chr in {1..22}
 do
-    qsub /home/mkato/mkato-jomon/2-msmc/2-0-bamcaller.sh T5 30 $chr
+    qsub -v sample_name=T5,depth=44,chr=$chr /home/mkato/mkato-jomon/2-msmc/2-0-bamcaller.sh
     echo "T5の${chr}"
-    sleep 1
-    qsub /home/mkato/mkato-jomon/2-msmc/2-0-bamcaller.sh I4 25 $chr
+    qsub -v sample_name=I4,depth=28,chr=$chr /home/mkato/mkato-jomon/2-msmc/2-0-bamcaller.sh
     echo "I4の${chr}"
-    sleep 1
 done
