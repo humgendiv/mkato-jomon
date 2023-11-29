@@ -20,6 +20,6 @@ if [ ! -d $OUTDIR ]; then
     mkdir -p $OUTDIR
 fi
 
-sample=T5
+sample=NA18939
 
 /usr/local/bin/msmc2 -t 8 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.chr{1..22}.multihetsep.txt
