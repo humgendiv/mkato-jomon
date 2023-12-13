@@ -1,8 +1,8 @@
 
+sample=I4
+LST=/home/mkato/hdd_data/data/5-imputed/GLIMPSE_ligate/list.chr${CHR}.txt
+ls -1v /home/mkato/hdd_data/data/5-imputed/${sample}_imputed/${sample}_imputed_*.bcf > ${LST}
 
-LST=GLIMPSE_ligate/list.chr22.txt
-ls -1v GLIMPSE_impute/NA12878_imputed_*.bcf > ${LST}
-
-OUT=GLIMPSE_ligate/NA12878_chr22_ligated.bcf
-./bin/GLIMPSE2_ligate --input ${LST} --output $OUT
+OUT=/home/mkato/hdd_data/data/5-imputed/GLIMPSE_ligate/${sample}_chr${CHR}_ligated.bcf
+/usr/local/bin/GLIMPSE2_ligate --input ${LST} --output $OUT
 

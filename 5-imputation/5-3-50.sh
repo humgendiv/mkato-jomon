@@ -1,5 +1,7 @@
-REF=reference_panel/split/1000GP.chr22.noNA12878
-BAM=NA12878_1x_bam/NA12878.bam
+REF=/home/mkato/hdd_data/data/Genomes1000/reference_panel/split/1000GP.chr${CHR}
+sample=T5
+BAM=/home/mkato/hdd_data/data/bam/share/new${sample}.bam
+MAP=/home/mkato/Repo/chr${CHR}.b37.gmap.gz
 
 while IFS="" read -r LINE || [ -n "$LINE" ]; 
 do   
@@ -9,6 +11,6 @@ do
 	CHR=$(echo ${LINE} | cut -d" " -f2)
 	REGS=$(echo ${IRG} | cut -d":" -f 2 | cut -d"-" -f1)
 	REGE=$(echo ${IRG} | cut -d":" -f 2 | cut -d"-" -f2)
-	OUT=GLIMPSE_impute/NA12878_imputed
-	./bin/GLIMPSE2_phase --bam-file ${BAM} --reference ${REF}_${CHR}_${REGS}_${REGE}.bin --output ${OUT}_${CHR}_${REGS}_${REGE}.bcf
-done < chunks.chr22.txt
+	OUT=/home/mkato/hdd_data/data/5-imputed/${sample}_imputed
+	/usr/local/bin/GLIMPSE2_phase_static --bam-file ${BAM} --reference ${REF}_${CHR}_${REGS}_${REGE}.bin --output ${OUT}_${CHR}_${REGS}_${REGE}.bcf
+done < /home/mkato/hdd_data/data/Genomes1000/chunks/chunks.chr${CHR}.txt
