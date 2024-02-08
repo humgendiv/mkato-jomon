@@ -13,11 +13,12 @@ MSMC_TOOLS=/home/mkato/Repo/msmc/msmc-tools/
 SAMPLENAME=$(basename $BAMFILE .bam)
 OUTDIR=$DATADIR/2-msmc/$SAMPLENAME
 mkdir -p $OUTDIR
-bcftools mpileup -q 30 -Q 30 -C 50 -Ou -r $CHROM -f $REFERENCE $BAMFILE | bcftools call -c -V indels | $MSMC_TOOLS/bamCaller.py $DEPTH $OUTDIR/$SAMPLENAME_${CHROM_WITHOUT_CHR}_mask.bed.gz | gzip -c > $OUTDIR/$SAMPLENAME_${CHROM_WITHOUT_CHR}.bcf.gz
+bcftools mpileup -q 30 -Q 30 -C 50 -Ou -r $CHROM -f $REFERENCE $BAMFILE | bcftools call -c -V indels | $MSMC_TOOLS/bamCaller.py $DEPTH $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}_mask.bed.gz | gzip -c > $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}.bcf.gz
 
 REF_MASK=$DATADIR/reference/ref_masks/hs37d5_chr${CHROM_WITHOUT_CHR}.mask.bed
-$MULTIHETSEP_OUTPUT=$OUTDIR/msmc_input_file
+MULTIHETSEP_OUTPUT=$OUTDIR/msmc_input_file
+mkdir -p $MULTIHETSEP_OUTPUT
 # 以下はgen_multihetsetに順ずる。ただし、1個体のみに対して実行。複数個体を同一集団とみなして一括で実行する場合は未実装。
-$MSMC_TOOLS/generate_multihetsep.py --chr $CHROM --mask=$OUTDIR/$SAMPLENAME_${CHROM_WITHOUT_CHR}_mask.bed.gz --mask=$REF_MASK $OUTDIR/$SAMPLENAME_${CHROM_WITHOUT_CHR}.vcf.gz > $MULTIHETSEP_OUTPUT/$SAMPLENAME.${CHROM_WITHOUT_CHR}.multihetsep.txt
+$MSMC_TOOLS/generate_multihetsep.py --chr $CHROM --mask=$OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}_mask.bed.gz --mask=$REF_MASK $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}.vcf.gz > $MULTIHETSEP_OUTPUT/${SAMPLENAME}.${CHROM_WITHOUT_CHR}.multihetsep.txt
 
 
