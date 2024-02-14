@@ -14,14 +14,16 @@ chr_or_not=$(samtools view $BAMFILE | head -1 | cut -f 3 | grep -c "chr")
 # chr_or_notの値に応じて判定する
 if [ $chr_or_not -eq 0 ]; then
 	# このときchrは含まれていないので、通常のfor文で処理する
+	echo "chr is NOT included"
 	for i in {1..22}
 	do
-		qsub -v BAMFILE=$BAMFILE,DEPTH=$DEPTH,CHR=$i ./2a-sub-bamcaller.sh
+		qsub -v BAMFILE=$BAMFILE,DEPTH=$DEPTH,CHROM=$i ./2a-sub-bamcaller.sh
 	done
 else
 	# このときchrは含まれているので、for文の添字にchrをつけて処理する
+	echo "chr is included"
 	for i in {1..22}
 	do
-		qsub -v BAMFILE=$BAMFILE,DEPTH=$DEPTH,CHR=chr$i ./2a-sub-bamcaller.sh
+		qsub -v BAMFILE=$BAMFILE,DEPTH=$DEPTH,CHROM=chr$i ./2a-sub-bamcaller.sh
 	done
 fi

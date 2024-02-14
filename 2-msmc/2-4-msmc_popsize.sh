@@ -13,13 +13,12 @@
 
 DATADIR=/home/mkato/hdd_data/data/2-msmc/
 
-INPUTDIR=$DATADIR/msmc_input_file/
-OUTDIR="${DATADIR}effective_population_size_file/"
+INPUTDIR=$DATADIR/$sample/msmc_input_file/
+OUTDIR="${DATADIR}/$sample/effective_population_size_file/"
 
 if [ ! -d $OUTDIR ]; then
     mkdir -p $OUTDIR
 fi
 
-sample=I4
 
-/usr/local/bin/msmc2 -t 8 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.chr{1..22}.multihetsep.txt
+/usr/local/bin/msmc2  -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
