@@ -20,7 +20,7 @@ OUTDIR=$DATADIR/2-msmc/$SAMPLENAME
 mkdir -p $OUTDIR
 
 echo "Start calling SNPs and indels for $SAMPLENAME on $CHROM"
-bcftools mpileup -q 30 -Q 30 -C 50 -Ou -r $CHROM -f $REFERENCE $BAMFILE | bcftools call -c -V indels | $MSMC_TOOLS/bamCaller.py $DEPTH $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}_mask.bed.gz | gzip -c > $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}.vcf.gz
+bcftools mpileup -q 10 -Q 10 -C 50 -Ou -r $CHROM -f $REFERENCE $BAMFILE | bcftools call -c -V indels | $MSMC_TOOLS/bamCaller.py $DEPTH $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}_mask.bed.gz | gzip -c > $OUTDIR/${SAMPLENAME}_${CHROM_WITHOUT_CHR}.vcf.gz
 echo "Finished calling SNPs and indels for $SAMPLENAME on $CHROM"
 
 REF_MASK=$DATADIR/reference/ref_masks/hs37d5_chr${CHROM_WITHOUT_CHR}.mask.bed
