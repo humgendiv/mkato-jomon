@@ -1,5 +1,17 @@
-#qsub -v sample=F23 2-4-msmc_popsize.sh
-#qsub -v sample=I15 2-4-msmc_popsize.sh
-#qsub -v sample=NA18939 2-4-msmc_popsize.sh
-#qsub -v sample=FM020_sorted 2-4-msmc_popsize.sh
-qsub -v sample=Iyai4b_Dra 2-4-msmc_popsize.sh
+# サンプル名のリストを指定
+list=(
+    "F23"
+    "I15"
+    "FM020_sorted"
+    "NA18939"
+    "Iyai4b_Dra"
+)
+
+# リストのサンプル名を一つずつ取り出して実行
+for i in "${list[@]}"
+do
+    # サンプル名を取り出す
+    SAMPLE=$(echo $i)
+    # ここで実行する
+    qsub -v sample=$SAMPLE 2-4-msmc_popsize.sh
+done
