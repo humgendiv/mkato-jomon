@@ -1,9 +1,9 @@
 # 実行するサンプル名をリストとして指定する
 list=(
-    "F23.bam"
+    #"F23.bam"
     "I15.bam"
-    "FM020_sorted.bam"
-    "NA18939.bam"
+    #"FM020_sorted.bam"
+    #"NA18939.bam"
     "Iyai4b_Dra.bam"
 )
 
