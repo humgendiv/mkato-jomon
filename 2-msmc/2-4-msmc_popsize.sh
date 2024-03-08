@@ -20,5 +20,4 @@ if [ ! -d $OUTDIR ]; then
     mkdir -p $OUTDIR
 fi
 
-
-/usr/local/bin/msmc2 -t 20 -p 1*4+20*2+10*1 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
+/usr/local/bin/msmc2 -t 20 -p 1*2+20*2+10*1 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
