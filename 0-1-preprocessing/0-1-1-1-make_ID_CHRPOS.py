@@ -1,9 +1,9 @@
 import os
 
-#sample_list = ["FM020", "F23_1to8"]
+sample_list = ["FM020_1to8", "FM020_9to22"]
 #sample_list = ["F23_9to22",] 
 #sample_list = ["I4",]
-sample_list = ["T5",]
+#sample_list = ["T5",]
 
 DIR = "/home/mkato/hdd_data/data/0-2-plink"
 

@@ -1,4 +1,5 @@
-SAMPLES=("FM020" "F23_1to8" "F23_9to22" "I4" "T5")
+#SAMPLES=("FM020" "F23_1to8" "F23_9to22" "I4" "T5")
+SAMPLES=("FM020_1to8", "FM020_9to22")
 
 for SAMPLE in "${SAMPLES[@]}"
 do
