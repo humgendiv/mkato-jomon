@@ -5,7 +5,7 @@
 #PBS -l walltime=10:00:00
 
 DIR=/home1/mkato/hdd_data/data/
-INPUT_DIR=${DIR}/0-2-plink
+INPUT_DIR=${DIR}/0-0-raw_vcf/complete/plink
 OUTPUT_DIR=${DIR}/0-3-extract_plink
 
 # 多少フィルターをかけたとはいえまだまだデータサイズが大きいので、今回主に扱う１２４０Kと４７都道府県

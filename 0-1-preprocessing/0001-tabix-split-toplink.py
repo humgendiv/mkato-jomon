@@ -3,8 +3,8 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
 # Set the input and output directories
-input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete'
-index_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/indexed'
+input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/'
+index_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/'
 split_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/split'
 plink_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/plink'
 
@@ -20,16 +20,27 @@ def process_file(filename):
     # Create index file
     input_file = os.path.join(input_dir, filename)
     index_file = os.path.join(index_dir, filename + '.tbi')
-    subprocess.run(['tabix', '-p', 'vcf', input_file])
+    print(f"indexing: {filename}")
+    # もし既にindexファイルがあれば、この工程はスキップする
+    if os.path.exists(index_file):
+        print(f"index file already exists: {index_file}")
+    else:
+        subprocess.run(['tabix', '-p', 'vcf', input_file])
     
     # Split by chromosome groups
     chrom_groups = ['1-7', '8-22']
     for group in chrom_groups:
-        chrom_file = os.path.join(split_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{group}.vcf.gz")
-        subprocess.run(['bcftools', 'view', '-r', group, input_file, '-Oz', '-o', chrom_file])
+        chrom_file = os.path.join(split_dir, f"{filename.replace('.vcf.gz', '')}.chr{group}.vcf.gz")
+        print(f"splitting: {filename} -> {chrom_file}")
+        if group == '1-7':
+            region = '1,2,3,4,5,6,7'
+        elif group == '8-22':
+            region = '8,9,10,11,12,13,14,15,16,17,18,19,20,21,22'
+        subprocess.run(['bcftools', 'view', '-r', region, input_file, '-Oz', '-o', chrom_file])
         
         # Convert to plink format
-        plink_prefix = os.path.join(plink_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{group}")
+        plink_prefix = os.path.join(plink_dir, f"{filename.replace('.vcf.gz', '')}.chr{group}")
+        print(f"converting to plink: {chrom_file} -> {plink_prefix}")
         subprocess.run(['/usr/local/bin/plink', '--make-bed', '--allow-extra-chr', '--vcf', chrom_file, '--out', plink_prefix])
 
 # Create a thread pool executor
