@@ -1,4 +1,3 @@
-
 import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
@@ -15,7 +14,7 @@ os.makedirs(split_dir, exist_ok=True)
 os.makedirs(plink_dir, exist_ok=True)
 
 # Get the list of VCF files in the input directory
-vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.vcf.gz')]
+vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.g.vcf.gz')]
 
 def process_file(filename):
     # Create index file
@@ -23,13 +22,14 @@ def process_file(filename):
     index_file = os.path.join(index_dir, filename + '.tbi')
     subprocess.run(['tabix', '-p', 'vcf', input_file])
     
-    # Split by chromosome
-    for chrom in range(1, 23):
-        chrom_file = os.path.join(split_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{chrom}.vcf.gz")
-        subprocess.run(['bcftools', 'view', '-r', str(chrom), input_file, '-Oz', '-o', chrom_file])
+    # Split by chromosome groups
+    chrom_groups = ['1-7', '8-22']
+    for group in chrom_groups:
+        chrom_file = os.path.join(split_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{group}.vcf.gz")
+        subprocess.run(['bcftools', 'view', '-r', group, input_file, '-Oz', '-o', chrom_file])
         
         # Convert to plink format
-        plink_prefix = os.path.join(plink_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{chrom}")
+        plink_prefix = os.path.join(plink_dir, f"{filename.replace('.g.vcf.gz', '')}.chr{group}")
         subprocess.run(['/usr/local/bin/plink', '--make-bed', '--allow-extra-chr', '--vcf', chrom_file, '--out', plink_prefix])
 
 # Create a thread pool executor
