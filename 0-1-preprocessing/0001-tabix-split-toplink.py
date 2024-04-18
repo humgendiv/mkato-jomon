@@ -14,7 +14,7 @@ os.makedirs(split_dir, exist_ok=True)
 os.makedirs(plink_dir, exist_ok=True)
 
 # Get the list of VCF files in the input directory
-vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.g.vcf.gz')]
+vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.vcf.gz')]
 
 def process_file(filename):
     # Create index file
