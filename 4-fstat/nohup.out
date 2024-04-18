@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/mkato/mkato-jomon/4-fstat/prefecture_f2.py", line 3, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

@@ -23,7 +23,7 @@ def calculate_f2(genotypes1, genotypes2):
     return diff_sum / site_count if site_count > 0 else 0
 
 vcf_file = '/home/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.vcf.gz'
-samples = ['DO_DO', 'FM020_FM020', 'Jomon_Jomon', 'T5_T5']
+samples = ['FM020_FM020', 'Iyai4b_Iyai4b', 'Jomon_Jomon', 'Todo5_Todo5']
 
 genotypes = {sample: [] for sample in samples}
 
