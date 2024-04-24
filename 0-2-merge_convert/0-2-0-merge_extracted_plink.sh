@@ -1,8 +1,12 @@
 #!/bin/bash
 
 #!ここを変える！(基本的にbedフォルダ内にすること)
-bed_folder="0-3-extract_plink"
+#bed_folder="0-3-extract_plink"
+bed_folder="Genomes1000/jptvcf_bed_extracted"
 folder_path="/home1/mkato/hdd_data/data/${bed_folder}" # フォルダのパスを指定する
+file_name="jpt_extracted" # ファイル名を指定する
+output_folder="$folder_path/merged" # 出力先のフォルダを指定する
+mkdir -p $output_folder
 
 cd $folder_path
 
@@ -11,14 +15,14 @@ for file in $(find "$folder_path" -type f -name "*.bim" -print); do
 done > output.txt # 出力をファイルにリダイレクトする
 echo "merge_list created"
 
-plink --merge-list output.txt --out "${folder_path}/m_${bed_folder}"
+plink --merge-list output.txt --out "${folder_path}/m_${file_name}"
 
 echo "merge trial done"
 
-if test -e "${folder_path}/m_${bed_folder}.missnp"; then
+if test -e "${folder_path}/m_${file_name}.missnp"; then
     echo "missnp is found"
     while read line; do
-        plink --make-bed --exclude "${folder_path}/m_${bed_folder}.missnp" --bfile $line --chr 1-22 --out "${line}.tmp"
+        plink --make-bed --exclude "${folder_path}/m_${file_name}.missnp" --bfile $line --chr 1-22 --out "${line}.tmp"
     done < output.txt
     echo "missnp has excluded"
 fi
@@ -27,11 +31,10 @@ while read line; do
     echo "$line.tmp" >> "output.tmp.txt"
 done < output.txt
 
-plink --merge-list output.tmp.txt --out "${folder_path}/m_${bed_folder}"
+plink --merge-list output.tmp.txt --out "${folder_path}/m_${file_name}"
 
 rm output.txt
 rm output.tmp.txt
-rm "${folder_path}/m_${bed_folder}.missnp"
+rm "${folder_path}/m_${file_name}.missnp"
 find "$folder_path" -name "*tmp*" -type f -delete
-mkdir -p ../0-4-merge_and_convert
-mv ${folder_path}/m_* ../0-4-merge_and_convert/
+mv ${folder_path}/m_* $output_folder 
