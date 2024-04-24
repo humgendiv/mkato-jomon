@@ -56,14 +56,15 @@ def process_vcf(input_file, output_file):
                             outfile.write('\t'.join(fields) + '\n')
 
 # Set input and output file paths
-input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf'
-output_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete'
-
+#input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf'
+#output_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete'
+input_dir = '/home/mkato/hdd_data/data/Genomes1000/jptvcf/'
+output_dir = '/home/mkato/hdd_data/data/Genomes1000/jptbed/'
 # Create the output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
 
 # Get the list of VCF files in the input directory
-vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.g.vcf.gz')]
+vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith('.vcf.gz')]
 
 # Create a process pool executor
 with ProcessPoolExecutor() as executor:
