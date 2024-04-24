@@ -5,7 +5,7 @@ import pandas as pd
 # 入力ファイルのディレクトリパス
 trait_dir = "/home/mkato/hdd_data/data/PS/PRS_processed"
 vcf_file = "/home/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.vcf"
-
+freq_file = "/home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted_alfreq.vcf"
 # 出力ファイルのディレクトリパス
 output_dir = "/home/mkato/hdd_data/data/PS/PRS_scores"
 
@@ -25,6 +25,16 @@ with open(vcf_file, "r") as f:
             genotypes = fields[9:]
             if "./." not in genotypes:  # 欠損している個体が存在する行を除外
                 vcf_snps[snp] = genotypes
+
+# 日本人集団のアリル頻度を取得
+freq_snps = {}
+with open(freq_file, "r") as f:
+    for line in f:
+        if not line.startswith("#"):
+            fields = line.strip().split("\t")
+            snp = f"{fields[0]}:{fields[1]}"
+            freq = float(fields[7].split("=")[1])
+            freq_snps[snp] = af
 
 # 各P値の閾値について処理を行う
 for p_threshold in p_thresholds:
@@ -50,7 +60,8 @@ for p_threshold in p_thresholds:
                         trait_snps[snp] = beta
             
             # 共通のSNPを取得
-            common_snps = set(vcf_snps.keys()) & set(trait_snps.keys())
+            common_snps_vcf = set(vcf_snps.keys()) & set(trait_snps.keys())
+            common_snps_freq = set(freq_snps.keys()) & set(trait_snps.keys())
             
             # ポリジェニックスコアを計算
             prs_scores = [0] * len(sample_names)
@@ -62,15 +73,23 @@ for p_threshold in p_thresholds:
                     if "." not in alleles:
                         dosage = alleles.count("1")
                         prs_scores[i] += beta * dosage / 2
-            
-            # 結果をデータフレームに追加
-            result_df[trait_name] = prs_scores
+
+            # 日本人個体のポリジェニックスコアを計算
+            prs_score_japanese = 0
+            for snp in common_snps_freq:
+                beta = trait_snps[snp]
+                af = freq_snps[snp]
+                prs_score_japanese += beta * af
+
+            result_df[trait_name] = prs_scores_jomon + [prs_score_japanese]
     
     # 計算対象となったSNPの数を取得
     num_snps = len(common_snps)
+    num_snps_freq = len(common_snps_freq)
     
     # 結果をファイルに出力
     output_file = os.path.join(output_dir, f"PRS_scores_p{p_threshold}.txt")
     with open(output_file, "w") as f:
-        f.write(f"# Number of SNPs used: {num_snps}\n")
+        f.write(f"# Number of SNPs used for Jomon: {num_snps}\n")
+        f.write(f"# Number of SNPs used for Japanese: {num_snps_freq}\n")
         result_df.to_csv(f, sep="\t", index_label="Individual")
