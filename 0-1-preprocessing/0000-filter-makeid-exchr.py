@@ -1,11 +1,10 @@
 import re
-import bgzip
 import gzip
 import os
 from concurrent.futures import ProcessPoolExecutor
 
 def process_vcf(input_file, output_file):
-    with gzip.open(input_file, 'rt') as infile, bgzip.open(output_file, 'wt') as outfile:
+    with gzip.open(input_file, 'rt') as infile, gzip.open(output_file, 'wt') as outfile:
         for line in infile:
             if line.startswith('#'):
                 if line.startswith('##contig') or line.startswith('#CHROM'):
