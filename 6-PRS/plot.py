@@ -6,7 +6,7 @@ def plot_PRS_diff(threshold):
     data = pd.read_csv(f"/home/mkato/hdd_data/data/PS/PRS_scores/PRS_scores_p{threshold}.txt", sep="\t", comment="#", index_col=0)
 
     # 現代日本人の値を引いて差分を計算
-    jomon_diff = data.iloc[:-1, :] - data.iloc[-1, :]
+    jomon_diff = data.iloc[:-1, :] #- data.iloc[-1, :]
 
     # 個体名をアンダーバーより前の部分のみに変更
     jomon_diff.index = [idx.split("_")[0] for idx in jomon_diff.index]
