@@ -21,7 +21,7 @@ ax.set_yticklabels(jomon_diff.columns)
 # 軸ラベルとタイトルの設定
 ax.set_xlabel("Difference from Modern Japanese")
 ax.set_ylabel("Traits")
-ax.set_title("Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = 0.01)")
+ax.set_title(f"Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = {threshold})")
 
 # 凡例の設定
 ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
