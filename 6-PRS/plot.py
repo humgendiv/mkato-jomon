@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-threshold = 0.0001
+threshold = input("Please input the GWAS P-value threshold: ")  # 0.000
 # データの読み込み
 data = pd.read_csv(f"/home/mkato/hdd_data/data/PS/PRS_scores/PRS_scores_p{threshold}.txt", sep="\t", comment="#", index_col=0)
 
