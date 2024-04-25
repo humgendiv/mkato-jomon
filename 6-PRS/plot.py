@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-threshold = 0.0001
+threshold = input("Please input the GWAS P-value threshold: ")  # 0.000
 # データの読み込み
 data = pd.read_csv(f"/home/mkato/hdd_data/data/PS/PRS_scores/PRS_scores_p{threshold}.txt", sep="\t", comment="#", index_col=0)
 
@@ -29,7 +29,7 @@ ax.set_yticklabels(sorted_traits)
 # 軸ラベルとタイトルの設定
 ax.set_xlabel("Difference from Modern Japanese")
 ax.set_ylabel("Traits")
-ax.set_title("Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = 0.01)")
+ax.set_title(f"Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = {threshold})")
 
 # 凡例の設定
 ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
