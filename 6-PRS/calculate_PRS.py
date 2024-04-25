@@ -33,13 +33,13 @@ with open(freq_file, "r") as f:
         if not line.startswith("#"):
             fields = line.strip().split("\t")
             snp = f"{fields[0]}:{fields[1]}"
-            freq = float(fields[7].split("=")[1])
+            af = float(fields[7].split("=")[1])
             freq_snps[snp] = af
 
 # 各P値の閾値について処理を行う
 for p_threshold in p_thresholds:
     # 結果を格納するデータフレームを初期化
-    result_df = pd.DataFrame(index=sample_names)
+    result_df = pd.DataFrame(index=sample_names + ["Japanese"])
     
     # 各形質のファイルを処理
     for filename in os.listdir(trait_dir):
@@ -64,15 +64,15 @@ for p_threshold in p_thresholds:
             common_snps_freq = set(freq_snps.keys()) & set(trait_snps.keys())
             
             # ポリジェニックスコアを計算
-            prs_scores = [0] * len(sample_names)
-            for snp in common_snps:
+            prs_scores_jomon = [0] * len(sample_names)
+            for snp in common_snps_vcf:
                 beta = trait_snps[snp]
                 genotypes = vcf_snps[snp]
                 for i, genotype in enumerate(genotypes):
                     alleles = genotype.split("/")
                     if "." not in alleles:
                         dosage = alleles.count("1")
-                        prs_scores[i] += beta * dosage / 2
+                        prs_scores_jomon[i] += beta * dosage / 2
 
             # 日本人個体のポリジェニックスコアを計算
             prs_score_japanese = 0
@@ -84,12 +84,12 @@ for p_threshold in p_thresholds:
             result_df[trait_name] = prs_scores_jomon + [prs_score_japanese]
     
     # 計算対象となったSNPの数を取得
-    num_snps = len(common_snps)
+    num_snps_vcf = len(common_snps_vcf)
     num_snps_freq = len(common_snps_freq)
     
     # 結果をファイルに出力
     output_file = os.path.join(output_dir, f"PRS_scores_p{p_threshold}.txt")
     with open(output_file, "w") as f:
-        f.write(f"# Number of SNPs used for Jomon: {num_snps}\n")
+        f.write(f"# Number of SNPs used for Jomon: {num_snps_vcf}\n")
         f.write(f"# Number of SNPs used for Japanese: {num_snps_freq}\n")
         result_df.to_csv(f, sep="\t", index_label="Individual")
