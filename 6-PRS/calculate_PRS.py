@@ -18,11 +18,11 @@ sample_names = []
 with open(vcf_file, "r") as f:
     for line in f:
         if line.startswith("#CHROM"):
-            sample_names = line.strip().split("\t")[9:]
+            sample_names = line.strip().split("\t")[9:][::2]
         elif not line.startswith("#"):
             fields = line.strip().split("\t")
             snp = f"{fields[0]}:{fields[1]}"
-            genotypes = fields[9:]
+            genotypes = fields[9:][::2]
             if "./." not in genotypes:  # 欠損している個体が存在する行を除外
                 vcf_snps[snp] = genotypes
 
