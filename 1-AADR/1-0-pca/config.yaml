@@ -1,0 +1,5 @@
+file_paths:
+  input_ind: '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr_jomon_down.ind'
+  output_allpop: '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/all_poplist_jomon_down.txt'
+  output_1000pop: '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/1000GP_poplist_jomon_down.txt'
+  output_ancientpop: '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/ancient_poplist_jomon.txt'

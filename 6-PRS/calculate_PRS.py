@@ -60,8 +60,8 @@ for p_threshold in p_thresholds:
                         trait_snps[snp] = beta
             
             # 共通のSNPを取得
-            common_snps_vcf = set(vcf_snps.keys()) & set(trait_snps.keys()) 
-            common_snps_freq = set(freq_snps.keys()) & set(trait_snps.keys())
+            common_snps_vcf = set(vcf_snps.keys()) & set(trait_snps.keys()) & set(freq_snps.keys()) 
+            common_snps_freq = common_snps_vcf #set(freq_snps.keys()) & set(trait_snps.keys())
             
             # ポリジェニックスコアを計算
             prs_scores_jomon = [0] * len(sample_names)

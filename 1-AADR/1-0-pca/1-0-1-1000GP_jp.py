@@ -1,4 +1,9 @@
-ind_file_path = '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.ind'
+import yaml
+# load config.yaml
+with open('config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+
+ind_file_path = config['file_paths']['input_ind'] # Path to the input .ind file
 
 # Define the list of 1000 Genomes Project population codes and the special cases
 target_pop_codes = [
@@ -31,7 +36,7 @@ with open(ind_file_path, 'r') as f:
 sorted_selected_populations = sorted(list(selected_populations))
 
 # Write these selected populations to a new poplist file
-selected_poplist_path = '/home/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/1000GP_poplist.txt'
+selected_poplist_path = config['file_paths']['output_1000pop'] # Path to the output selected poplist file
 with open(selected_poplist_path, 'w') as f:
     for population in sorted_selected_populations:
         f.write(f"{population}\n")
