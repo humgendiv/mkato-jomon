@@ -19,7 +19,8 @@ def calculate_f2(genotypes1, genotypes2):
             freq2 = sum(int(allele) for allele in gt2.split('/')) / 2
             diff_sum += (freq1 - freq2) ** 2
             site_count += 1
-    
+
+    print(f"site count:{site_count}")
     return diff_sum / site_count if site_count > 0 else 0
 
 vcf_file = '/home/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.vcf.gz'

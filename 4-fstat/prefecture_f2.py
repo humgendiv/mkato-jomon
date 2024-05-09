@@ -56,6 +56,7 @@ for prefecture in prefectures:
             prefecture_freqs.append(alt_freq)
         
         f2 = sum(calculate_f2(jf, pf) for jf, pf in zip(jomon_freqs, prefecture_freqs)) / len(jomon_freqs)
+        print(f"length of jomon_freqs: {len(jomon_freqs)}, length of prefecture_freqs: {len(prefecture_freqs)}")
         print(f'F2({sample}, {prefecture}) = {f2:.4f}')
         f2_results.append({'Sample': sample, 'Prefecture': prefecture, 'F2': f2})
 
