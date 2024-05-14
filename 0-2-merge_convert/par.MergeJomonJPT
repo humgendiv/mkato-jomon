@@ -1,0 +1,9 @@
+geno1: /home1/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/merged/m_downsized_jomon_extracted.geno
+snp1:  /home1/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/merged/m_downsized_jomon_extracted.snp
+ind1:  /home1/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/merged/m_downsized_jomon_extracted.ind
+geno2: /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted.geno
+snp2:  /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted.snp
+ind2:  /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted.ind
+genooutfilename: /home/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/jpt_merged/jomon_jpt.geno
+snpoutfilename:      /home/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/jpt_merged/jomon_jpt.snp
+indoutfilename:    /home/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/jpt_merged/jomon_jpt.ind

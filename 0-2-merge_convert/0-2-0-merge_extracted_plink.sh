@@ -3,9 +3,13 @@
 #!ここを変える！(基本的にbedフォルダ内にすること)
 #bed_folder="0-3-extract_plink"
 #bed_folder="Genomes1000/jptvcf_bed_extracted"
-bed_folder="0-3-extract_plink_downsized_jomon"
+#bed_folder="0-3-extract_plink_downsized_jomon"
+#bed_folder="0-0-raw_vcf/complete/plink_common"
+bed_folder="Genomes1000/jptvcf_bed/merged/extracted"
 #file_name="jpt_extracted" # ファイル名を指定する
-file_name="downsized_jomon_extracted" # ファイル名を指定する
+#file_name="downsized_jomon_extracted" # ファイル名を指定する
+#file_name="jomon_common" # ファイル名を指定する
+file_name="jomon_fullJPT_complete" # ファイル名を指定する
 
 folder_path="/home1/mkato/hdd_data/data/${bed_folder}" # フォルダのパスを指定する
 output_folder="$folder_path/merged" # 出力先のフォルダを指定する
@@ -18,6 +22,8 @@ for file in $(find "$folder_path" -type f -name "*.bim" -print); do
 done > output.txt # 出力をファイルにリダイレクトする
 echo "merge_list created"
 
+# plinkのパス（/usr/loca/bin/plink）が通っていないので通す
+export PATH=$PATH:/usr/local/bin
 plink --merge-list output.txt --out "${folder_path}/m_${file_name}"
 
 echo "merge trial done"
