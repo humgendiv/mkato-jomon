@@ -14,7 +14,6 @@ def process_af_file(file_path, positions):
     
     # 出力ファイル名の生成
     output_file = os.path.join(output_dir, os.path.basename(file_path))
-    
     os.makedirs(output_dir, exist_ok=True)  # 出力ディレクトリが存在しない場合は作成
     
     with open(file_path, 'r', encoding='utf-8') as input_txt, open(output_file, 'w', encoding='utf-8') as output_txt:
