@@ -68,7 +68,6 @@ def calculate_f2_values(vcf_file, af_data):
                             num_snps[sample] += 1
                         total_snps += 1
                     # REFはref, af_refで一致しているが、ALTはaf_altは問題ないが、af_altが”.”になっている場合。
-                    elif alt == af_ref and af_alts[0] == '.':
                     else:
                         print(f"alt: {alt}, ref: {ref}, af_alts: {af_alts}, af_ref: {af_ref}")
     

@@ -27,7 +27,7 @@ def process_af_file(file_path, positions):
                 output_txt.write(line)
 
 def main():
-    positions_file = "/home/mkato/hdd_data/data/bim/merged_positions.bim"
+    positions_file = "/home/mkato/hdd_data/data/bim/korean_jomon.txt"
     positions = load_positions(positions_file)
     
     input_dir = "/home/mkato/hdd_data/data/Genomes/korean/af"
