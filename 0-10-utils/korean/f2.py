@@ -67,6 +67,10 @@ def calculate_f2_values(vcf_file, af_data):
                                 f2_values[sample] += calculate_f2(0, inverted_af)
                             num_snps[sample] += 1
                         total_snps += 1
+                    # REFはref, af_refで一致しているが、ALTはaf_altは問題ないが、af_altが”.”になっている場合。
+                    elif alt == af_ref and af_alts[0] == '.':
+                    else:
+                        print(f"alt: {alt}, ref: {ref}, af_alts: {af_alts}, af_ref: {af_ref}")
     
     # Calculate average F2 values
     for sample in f2_values:
@@ -76,8 +80,8 @@ def calculate_f2_values(vcf_file, af_data):
     return f2_values, total_snps, total_jomon_snps
 
 def main():
-    af_dir = "/home/mkato/hdd_data/data/Genomes/korean/af_filtered"
-    vcf_file = "/home/mkato/hdd_data/data/0-3-extract_plink_downsized_jomon/merged/plink.vcf"
+    af_dir = "/home/mkato/hdd_data/data/Genomes/korean/af"
+    vcf_file = "/home/mkato/hdd_data/data/Genomes/korean/jomon_korean_comm/merged/m_jomon_fullkorean_complete.vcf"
     
     af_data, total_af_snps = load_af_data(af_dir)
     f2_values, total_snps, total_jomon_snps = calculate_f2_values(vcf_file, af_data)
