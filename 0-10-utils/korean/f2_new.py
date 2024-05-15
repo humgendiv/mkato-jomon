@@ -32,7 +32,8 @@ def calculate_f2(vcf_genotype, ref, alt, freq_ref, freq_alt, freq):
 
 # VCFファイルをデータフレームとして読み込む
 vcf_data = pd.read_csv(vcf_file, sep='\t', comment='#', header=None)
-vcf_data.columns = ['CHROM', 'POS', 'ID', 'REF', 'ALT'] + [f'SAMPLE_{i}' for i in range(1, 5)]
+print(vcf_data.head())
+vcf_data.columns = ['CHROM', 'POS', 'ID', 'REF', 'ALT'] +['a','b','c','d']+ ['FM020_FM020', 'Iyai4b_Iyai4b', 'Jomon_Jomon', 'Todo5_Todo5']
 
 # 各染色体のアリル頻度ファイルを読み込み、結合する
 freq_files = glob.glob(freq_dir + 'chr*.af.txt')
@@ -55,7 +56,7 @@ for _, row in merged_data.iterrows():
     freq_afs = list(map(float, row['AF'].split(',')))
 
     for i, sample in enumerate(sample_names):
-        genotype = row[f'SAMPLE_{i+1}']
+        genotype = row[sample]
         for freq_alt, freq in zip(freq_alts, freq_afs):
             f2 = calculate_f2(genotype, ref, alt, freq_ref, freq_alt, freq)
             if f2 is not None:

@@ -19,7 +19,7 @@ def read_freq_file(file_path):
 def calculate_f2(freq1, freq2):
     return (freq1 - freq2) ** 2
 
-vcf_file = '/home/mkato/hdd_data/data/0-4-merge_and_convert/m_0-3-extract_plink.vcf.gz'
+vcf_file = '/home/mkato/hdd_data/data/0-4-merge_and_convert/Pruned.m_0-3-extract_plink.vcf.gz'
 freq_file_prefix = '/home/mkato/hdd_data/data/Prefecture/prefectural_afreq_data/vM_QC_PC_bi.Rsq03'
 freq_file_suffix = '.rand50.afreq'
 prefectures = [f'ken{i}' for i in range(1, 48)]
@@ -64,4 +64,4 @@ f2_df = pd.DataFrame(f2_results)
 f2_pivot = f2_df.pivot(index='Sample', columns='Prefecture', values='F2')
 print(f2_pivot)
 
-f2_pivot.to_csv('f2_pivot.csv')
+f2_pivot.to_csv('Pruned.f2_pivot.csv')
