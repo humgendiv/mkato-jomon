@@ -3,13 +3,11 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
 # Set the input and output directories
-input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/'
-index_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/'
-split_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/split'
-plink_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete/plink'
+input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/new_comp/00-filter_makeid_exchr'
+split_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/new_comp/01-tabix-split-toplink/split'
+plink_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/new_comp/01-tabix-split-toplink/plink'
 
 # Create the output directories if they don't exist
-os.makedirs(index_dir, exist_ok=True)
 os.makedirs(split_dir, exist_ok=True)
 os.makedirs(plink_dir, exist_ok=True)
 
@@ -19,7 +17,7 @@ vcf_files = [filename for filename in os.listdir(input_dir) if filename.endswith
 def process_file(filename):
     # Create index file
     input_file = os.path.join(input_dir, filename)
-    index_file = os.path.join(index_dir, filename + '.tbi')
+    index_file = os.path.join(input_dir, filename + '.tbi')
     print(f"indexing: {filename}")
     # もし既にindexファイルがあれば、この工程はスキップする
     if os.path.exists(index_file):

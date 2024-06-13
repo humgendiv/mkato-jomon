@@ -1,0 +1,7 @@
+genotypename:	/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.geno
+snpname:	/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.snp
+indivname:	/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/present_poplist.ind
+outputformat: EIGENSTRAT
+genotypeoutname:	/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/only_present.geno
+snpoutname:		/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/only_present.snp
+indivoutname:		/home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/only_present.ind

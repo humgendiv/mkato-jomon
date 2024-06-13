@@ -3,14 +3,16 @@
 #!ここを変える！(基本的にbedフォルダ内にすること)
 #bed_folder="0-3-extract_plink"
 #bed_folder="Genomes1000/jptvcf_bed_extracted"
-#bed_folder="0-3-extract_plink_downsized_jomon"
+#bed_folder="0-3-extract_plink"
+bed_folder="AADR/ancient_for_pca"
 #bed_folder="0-0-raw_vcf/complete/plink_common"
 #bed_folder="Genomes1000/jptvcf_bed/merged/extracted"
-bed_folder="Genomes/korean/jomon_korean_comm"
+#bed_folder="Genomes/korean/jomon_korean_comm"
 #file_name="jpt_extracted" # ファイル名を指定する
-#file_name="downsized_jomon_extracted" # ファイル名を指定する
+#file_name="jomon_extracted" # ファイル名を指定する
 #file_name="jomon_common" # ファイル名を指定する
-file_name="jomon_fullkorean_complete" # ファイル名を指定する
+#file_name="jomon_fullkorean_complete" # ファイル名を指定する
+file_name="merged" # ファイル名を指定する
 
 folder_path="/home1/mkato/hdd_data/data/${bed_folder}" # フォルダのパスを指定する
 output_folder="$folder_path/merged" # 出力先のフォルダを指定する

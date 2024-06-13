@@ -57,8 +57,8 @@ def process_vcf(input_file, output_file):
 # Set input and output file paths
 #input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf'
 #output_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/complete'
-input_dir = '/home/mkato/hdd_data/data/Genomes1000/jptvcf/'
-output_dir = '/home/mkato/hdd_data/data/Genomes1000/jptbed/'
+input_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/new_comp/'
+output_dir = '/home/mkato/hdd_data/data/0-0-raw_vcf/new_comp/00-filter_makeid_exchr'
 # Create the output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
 

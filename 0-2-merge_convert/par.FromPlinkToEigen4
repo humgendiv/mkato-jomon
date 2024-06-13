@@ -1,0 +1,8 @@
+genotypename: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.bed
+snpname: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.bim
+indivname: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.fam
+outputformat: EIGENSTRAT
+genotypeoutname: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.geno
+snpoutname: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.snp
+indivoutname: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.ind
+pordercheck: NO

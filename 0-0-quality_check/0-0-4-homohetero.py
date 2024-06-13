@@ -6,7 +6,7 @@ def count_genotypes(vcf_gz_file):
     count_0_1_or_1_0 = 0
     count_0_0 = 0
     count_missing =0
-
+#    with open(vcf_gz_file, 'r') as file:
     with gzip.open(vcf_gz_file, 'rt') as file:  # 'rt'はテキストモードで読み込むことを指定
         for line in file:
             if line.startswith('#'):
@@ -30,9 +30,9 @@ def count_genotypes(vcf_gz_file):
     return count_1_1, count_0_1_or_1_0, count_0_0, count_missing
 
 # VCF.gzファイルパス
-sample_name = 'I4'
+sample_name = 'I1_all.g.vcf.gz'
 #vcf_gz_file = f'/home/mkato/hdd_data/data/0-0-raw_vcf/{sample_name}.vcf.gz'
-vcf_gz_file = f'/home/mkato/hdd_data/data/0-1-filtered_vcf/{sample_name}_filtered2.vcf.gz'
+vcf_gz_file = f'/home/mkato/hdd_data/data/0-0-raw_vcf/{sample_name}'
 # カウントを実行
 count_1_1, count_0_1_or_1_0,count_0_0, count_missing = count_genotypes(vcf_gz_file)
 print(sample_name+'filtered')

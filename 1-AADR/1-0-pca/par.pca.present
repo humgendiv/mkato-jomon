@@ -1,0 +1,9 @@
+genotypename: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.bed 
+snpname:  /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.bim 
+indivname: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.fam 
+evecoutname: /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/present_and_ancient.evec.txt 
+evaloutname: /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/present_and_ancient.eval.txt
+lsqproject: YES 
+autoshrink: YES
+killr2: YES
+r2thresh: 0.2

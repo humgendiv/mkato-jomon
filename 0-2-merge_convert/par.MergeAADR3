@@ -1,0 +1,9 @@
+geno1: /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.geno
+snp1:  /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.snp
+ind1:  /home1/mkato/hdd_data/data/0-3-extract_plink/merged/m_jomon_extracted.ind
+geno2: /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.geno
+snp2:  /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.new.snp
+ind2:  /home1/mkato/hdd_data/data/AADR/v54.1.p1_1240K_public.ind
+genooutfilename: /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.geno
+snpoutfilename:      /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.snp
+indoutfilename:    /home1/mkato/hdd_data/data/1-withAADR/1-0-merged_eigen/jomon_aadr.ind
