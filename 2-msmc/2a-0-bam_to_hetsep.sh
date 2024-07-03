@@ -1,5 +1,7 @@
 #bamファイルが格納されているディレクトリを予め指定しておく
-DATADIR=/home1/mkato/hdd_data/data/bam/share/
+#DATADIR=/home1/mkato/hdd_data/data/6-kraken/complete_bam/
+DATADIR=/home/mkato/hdd_data/data/fastq/FM027/bam/
+
 # bamファイルを指定. ファイル名はこのスクリプトの実行時に第1引数として拡張子付きで指定すること。
 BAMFILE=${DATADIR}$1
 

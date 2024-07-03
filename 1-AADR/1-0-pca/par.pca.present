@@ -1,9 +1,11 @@
-genotypename: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.bed 
-snpname:  /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.bim 
-indivname: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/m_merged.fam 
+genotypename: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/keep.bed 
+snpname:  /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/keep.bim 
+indivname: /home1/mkato/hdd_data/data/AADR/ancient_for_pca/merged/keep.fam 
 evecoutname: /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/present_and_ancient.evec.txt 
 evaloutname: /home1/mkato/hdd_data/data/1-withAADR/1-1-pca/present_and_ancient.eval.txt
 lsqproject: YES 
-autoshrink: YES
-killr2: YES
-r2thresh: 0.2
+#autoshrink: YES
+#killr2: YES
+#r2thresh: 0.2
+numoutlieriter: 0
+numoutevec: 5

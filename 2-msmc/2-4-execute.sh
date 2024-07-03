@@ -5,7 +5,11 @@ list=(
     #"FM020_sorted"
     #"NA18939"
     #"Iyai4b_Dra"
-    "Todo5_Dra"
+    #"Todo5_Dra"
+    #"T5_human"
+    #"I4_human"
+    "FM027-1"
+    "FM027-2"
 )
 
 # リストのサンプル名を一つずつ取り出して実行
