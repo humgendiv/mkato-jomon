@@ -1,9 +1,9 @@
 # サンプル名のリストを指定
 list=(
-    #"F23"
+    "F23"
     #"I15"
-    #"FM020_sorted"
-    #"NA18939"
+    "FM020_sorted"
+    "NA18939"
     #"Iyai4b_Dra"
     #"Todo5_Dra"
     #"T5_human"
