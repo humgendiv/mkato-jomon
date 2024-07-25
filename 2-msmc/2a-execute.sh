@@ -8,8 +8,9 @@ list=(
     #"Todo5_Dra.bam"
     #"T5_human.bam"
     #"I4_human.bam"
-    "FM027-1.bam"
-    "FM027-2.bam"
+    #"FM027-1.bam"
+    #"FM027-2.bam"
+    "I1.bam"
 )
 
 # リストのサンプル名とを一つずつ取り出して実行

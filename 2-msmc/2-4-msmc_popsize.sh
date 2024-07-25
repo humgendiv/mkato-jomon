@@ -22,4 +22,4 @@ fi
 
 
 #/usr/local/bin/msmc2 -t 20 -p 1*2+20*2+10*1 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
-/usr/local/bin/msmc2 -t 20 -p 1*8+20*2+15*1 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
+/usr/local/bin/msmc2 -t 20 -p 2*1+1*2+10*1+21*2+1*8 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
