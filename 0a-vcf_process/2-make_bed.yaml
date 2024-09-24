@@ -1,0 +1,13 @@
+# 設定ファイルの親ディレクトリのパス
+parent_path: /home/mkato/hdd_data/0-genome_data
+
+# 処理対象のフォルダリスト（例: F23, I4）
+target_folders:
+  - F23
+  - I4
+  - C3
+  - Mb3
+  - I1
+  - T5
+  - Mt3
+  - I15

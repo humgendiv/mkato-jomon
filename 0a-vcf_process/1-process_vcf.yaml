@@ -1,0 +1,26 @@
+# データパス
+parent_path: /home/mkato/hdd_data/0-genome_data/
+# 処理に加えるサンプル
+target_folders:
+  - F23
+  - I4
+  - C3
+  - Mb3
+  - I1
+  - T5
+  - Mt3
+  - I15
+
+# 各処理を実行するかスキップするかの選択
+options:
+  remove_chr_prefix: true      # true: CHROMフィールドから'chr'を削除する
+  remove_non_ref: true         # true: ALTフィールドの'<NON_REF>'を削除・置換
+  expand_end: true             # true: END情報を展開する
+  assign_id: true              # true: CHROM:POS形式のIDを付与する
+  filtering: true              # true: フィルタリングを行う
+
+# フィルタリングで指定するDepth（デフォルトは10）
+filter_depth: 10
+
+# 出力先フォルダ名の接尾辞（例: "processed" なら "F23/processed" というフォルダが作成される）
+output_suffix: processed

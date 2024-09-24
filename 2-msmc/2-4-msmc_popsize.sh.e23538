@@ -1,0 +1,43 @@
+read 107 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.1.multihetsep.txt, using indices [[0, 1]]
+read 53 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.2.multihetsep.txt, using indices [[0, 1]]
+read 3 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.3.multihetsep.txt, using indices [[0, 1]]
+read 55 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.4.multihetsep.txt, using indices [[0, 1]]
+read 11 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.5.multihetsep.txt, using indices [[0, 1]]
+read 19 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.6.multihetsep.txt, using indices [[0, 1]]
+read 3 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.7.multihetsep.txt, using indices [[0, 1]]
+read 9 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.8.multihetsep.txt, using indices [[0, 1]]
+read 22 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.9.multihetsep.txt, using indices [[0, 1]]
+read 7 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.10.multihetsep.txt, using indices [[0, 1]]
+read 5 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.11.multihetsep.txt, using indices [[0, 1]]
+read 0 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.12.multihetsep.txt, using indices [[0, 1]]
+read 0 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.13.multihetsep.txt, using indices [[0, 1]]
+read 3 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.14.multihetsep.txt, using indices [[0, 1]]
+read 129 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.15.multihetsep.txt, using indices [[0, 1]]
+read 3 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.16.multihetsep.txt, using indices [[0, 1]]
+read 7 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.17.multihetsep.txt, using indices [[0, 1]]
+read 2 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.18.multihetsep.txt, using indices [[0, 1]]
+read 7 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.19.multihetsep.txt, using indices [[0, 1]]
+read 3 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.20.multihetsep.txt, using indices [[0, 1]]
+read 59 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.21.multihetsep.txt, using indices [[0, 1]]
+read 0 SNPs from file /home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.22.multihetsep.txt, using indices [[0, 1]]
+msnukleotide diversitynukleotide diversitynukleotide diversitytimating mutation rate: 0.000864478
+input files:         ["/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.1.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.2.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.3.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.4.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.5.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.6.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.7.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.8.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.9.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.10.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.11.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.12.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.13.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.14.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.15.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.16.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.17.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.18.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.19.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.20.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.21.multihetsep.txt", "/home/mkato/hdd_data/data/2-msmc//I1/msmc_input_file//I1.22.multihetsep.txt"]
+maxIterations:       20
+mutationRate:        0.000864478
+recombinationRate:   0.000216119
+timeSegmentPattern:  [1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8]
+nrThreads:           20
+outFilePrefix:       /home/mkato/hdd_data/data/2-msmc//I1/effective_population_size_file//I1.msmc2
+hmmStrideWidth:      1000
+fixedRecombination:  false
+initialLambdaVec:    []
+skipAmbiguous:       false
+indices:             [0, 1]
+logging information written to /home/mkato/hdd_data/data/2-msmc//I1/effective_population_size_file//I1.msmc2.log
+loop information written to /home/mkato/hdd_data/data/2-msmc//I1/effective_population_size_file//I1.msmc2.loop.txt
+final results written to /home/mkato/hdd_data/data/2-msmc//I1/effective_population_size_file//I1.msmc2.final.txt
+time factor:         1
+[1/20] Baumwelch iteration
+  * [1/22] Expectation Step  * [3/22] Expectation Step  * [5/22] Expectation Step  * [2/22] Expectation Step  * [8/22] Expectation Step  * [7/22] Expectation Step  * [9/22] Expectation Step  * [6/22] Expectation Step  * [10/22] Expectation Step  * [12/22] Expectation Step  * [18/22] Expectation Step  * [12/22] Expectation Step  * [11/22] Expectation Step  * [15/22] Expectation Step  * [16/22] Expectation Step  * [19/22] Expectation Step  * [13/22] Expectation Step  * [17/22] Expectation Step  * [20/22] Expectation Step  * [14/22] Expectation Stepgsl: init_source.c:29: ERROR: vector length n must be positive integer
+Default GSL error handler invoked.
+/var/spool/pbs/mom_priv/jobs/23538.humgendiv.SC: line 25: 2841911 Aborted                 (core dumped) /usr/local/bin/msmc2 -t 20 -p 2*1+1*2+10*1+21*2+1*8 -o $OUTDIR/$sample.msmc2 $INPUTDIR/$sample.{1..22}.multihetsep.txt
