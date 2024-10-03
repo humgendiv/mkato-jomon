@@ -1,0 +1,5 @@
+# 設定ファイル: config.yaml
+dataset_bfile: /home/mkato/hdd_data/1-merged_data/ctrl-1240K/keep  # AADR1240Kデータセットのベースファイル名（.bed/.bim/.famを指定しない）
+sample_bfile: /home/mkato/hdd_data/1-merged_data/sample/merged_sample  # マージされたサンプルデータのベースファイル名（.bed/.bim/.famを指定しない）
+output_bfile: /home/mkato/hdd_data/1-merged_data/merged/jomon_1240K_asia  # 統合された出力ファイルのベース名
+

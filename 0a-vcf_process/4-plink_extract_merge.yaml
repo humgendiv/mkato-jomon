@@ -1,6 +1,8 @@
 # 設定ファイル: config.yaml
 parent_dir: /home/mkato/hdd_data/0-genome_data  # 0-genome_dataディレクトリのパス
-extract_file: /home/mkato/hdd_data/data/bim/1240K.bim  # 抽出に使うbimファイル
+extract_file: /home/mkato/hdd_data/data/bim/merged_positions.bim  # 抽出に使うbimファイル
 output_dir: /home/mkato/hdd_data/1-merged_data/sample  # マージ結果の保存先
 final_output_name: merged_sample  # 最終的な生成ファイル名
+skip_extract: false # 抽出処理をスキップするかどうかのフラグ
+samples_to_run: []
 

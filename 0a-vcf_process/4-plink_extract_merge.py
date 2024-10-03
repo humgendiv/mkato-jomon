@@ -1,6 +1,7 @@
 import os
 import subprocess
 import yaml
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 # 設定ファイルを読み込む関数
 def load_config(config_file):
@@ -9,33 +10,32 @@ def load_config(config_file):
     return config
 
 # SNPをextractする関数
-def extract_snps(parent_dir, extract_file):
-    # parent_dir内のサンプルフォルダを探索
-    for folder in os.listdir(parent_dir):
-        folder_path = os.path.join(parent_dir, folder)
-        processed_dir = os.path.join(folder_path, "processed")
-        extracted_dir = os.path.join(folder_path, "extracted")
+def extract_snps_for_sample(folder_path, extract_file):
+    processed_dir = os.path.join(folder_path, "processed")
+    extracted_dir = os.path.join(folder_path, "extracted")
 
-        if os.path.isdir(processed_dir):
-            os.makedirs(extracted_dir, exist_ok=True)  # extractedディレクトリを作成
+    extract_base_name = os.path.splitext(os.path.basename(extract_file))[0]
 
-            # processedフォルダ内の.bedファイルを探索してSNPを抽出
-            for bed_file in os.listdir(processed_dir):
-                if bed_file.endswith('.bed'):
-                    base_name = os.path.splitext(bed_file)[0]
-                    input_bfile = os.path.join(processed_dir, base_name)
-                    output_bfile = os.path.join(extracted_dir, f"{base_name}_extracted_1240K")
-                    
-                    # plinkコマンドでSNPを抽出
-                    plink_cmd = [
-                        "plink",
-                        "--bfile", input_bfile,
-                        "--extract", extract_file,
-                        "--make-bed",
-                        "--out", output_bfile
-                    ]
-                    subprocess.run(plink_cmd, check=True)
-                    print(f"Extracted SNPs for {folder} from {bed_file}")
+    if os.path.isdir(processed_dir):
+        os.makedirs(extracted_dir, exist_ok=True)  # extractedディレクトリを作成
+
+        # processedフォルダ内の.bedファイルを探索してSNPを抽出
+        for bed_file in os.listdir(processed_dir):
+            if bed_file.endswith('.bed'):
+                base_name = os.path.splitext(bed_file)[0]
+                input_bfile = os.path.join(processed_dir, base_name)
+                output_bfile = os.path.join(extracted_dir, f"{base_name}_extracted_{extract_base_name}")
+                
+                # plinkコマンドでSNPを抽出
+                plink_cmd = [
+                    "plink",
+                    "--bfile", input_bfile,
+                    "--extract", extract_file,
+                    "--make-bed",
+                    "--out", output_bfile
+                ]
+                subprocess.run(plink_cmd, check=True)
+                print(f"Extracted SNPs for {folder_path} from {bed_file}")
 
 # 複数のplinkファイルをマージする関数
 def merge_plink_files(parent_dir, output_dir, final_output_name):
@@ -60,8 +60,12 @@ def merge_plink_files(parent_dir, output_dir, final_output_name):
         "--merge-list", output_txt,
         "--out", final_output_prefix
     ]
-    subprocess.run(plink_merge_cmd, check=True)
-    print("Merge trial done")
+
+    try:
+        subprocess.run(plink_merge_cmd, check=True)
+        print("Initial merge trial done")
+    except subprocess.CalledProcessError:
+        print("Initial merge failed, attempting to handle multi-allelic SNPs using missnp file")
 
     # missnpファイルがある場合
     missnp_file = f"{final_output_prefix}.missnp"
@@ -80,21 +84,31 @@ def merge_plink_files(parent_dir, output_dir, final_output_name):
                     "--chr", "1-22",
                     "--out", tmp_output
                 ]
-                subprocess.run(exclude_cmd, check=True)
-                f_out.write(f"{tmp_output}\n")
-        
+                try:
+                    subprocess.run(exclude_cmd, check=True)
+                    f_out.write(f"{tmp_output}\n")
+                except subprocess.CalledProcessError:
+                    print(f"Failed to process {line} with exclusion list, skipping")
+
         # 再度マージ
         final_merge_cmd = [
             "plink",
             "--merge-list", tmp_txt,
             "--out", final_output_prefix
         ]
-        subprocess.run(final_merge_cmd, check=True)
+        try:
+            subprocess.run(final_merge_cmd, check=True)
+            print("Final merge completed successfully")
+        except subprocess.CalledProcessError:
+            print("Final merge attempt failed, please check the data for further issues")
 
         # クリーンアップ
-        os.remove(output_txt)
-        os.remove(tmp_txt)
-        os.remove(missnp_file)
+        if os.path.exists(output_txt):
+            os.remove(output_txt)
+        if os.path.exists(tmp_txt):
+            os.remove(tmp_txt)
+        if os.path.exists(missnp_file):
+            os.remove(missnp_file)
         print("Temporary files cleaned up")
 
 # メイン処理
@@ -105,10 +119,25 @@ def main(config_file):
     extract_file = config['extract_file']
     output_dir = config['output_dir']
     final_output_name = config['final_output_name']
+    skip_extract = config['skip_extract']
+    samples_to_run = config['samples_to_run']
 
-    # SNPの抽出
-    extract_snps(parent_dir, extract_file)
+    if not skip_extract:
+        # 並列でSNPの抽出を実行
+        with ProcessPoolExecutor() as executor:
+            futures = []
+            for folder in os.listdir(parent_dir):
+                folder_path = os.path.join(parent_dir, folder)
+                if os.path.isdir(folder_path) and (not samples_to_run or folder in samples_to_run):
+                    future = executor.submit(extract_snps_for_sample, folder_path, extract_file)
+                    futures.append(future)
 
+            # 全ての抽出処理が完了するのを待つ
+            for future in as_completed(futures):
+                future.result()
+            print("All SNP extraction processes are complete.")
+    else:
+        print("Skipping SNP extraction")
     # プリンクファイルのマージ
     merge_plink_files(parent_dir, output_dir, final_output_name)
 
@@ -116,5 +145,4 @@ def main(config_file):
 if __name__ == "__main__":
     config_file = "4-plink_extract_merge.yaml"
     main(config_file)
-
 
