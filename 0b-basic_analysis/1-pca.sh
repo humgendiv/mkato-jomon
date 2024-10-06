@@ -1,0 +1,1 @@
+/home/mkato/Repo/EIG/bin/smartpca -p 1-pca.par

@@ -1,0 +1,12 @@
+genotypename: /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_1240K_0.05.bed 
+snpname:   /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_1240K_0.05.bim 
+indivname: /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_1240K_0.05.fam
+evecoutname: /home1/mkato/hdd_data/2-0-pca/jomon_1240K_0.05.evec.txt
+evaloutname: /home1/mkato/hdd_data/2-0-pca/jomon_1240K_0.05.eval.txt
+lsqproject: YES 
+#autoshrink: YES
+#killr2: YES
+#r2thresh: 0.2
+numoutlieriter: 0
+numoutevec: 5
+

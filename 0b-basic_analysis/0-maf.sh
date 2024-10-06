@@ -1,0 +1,1 @@
+plink --bfile /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_1240K --maf 0.05 --make-bed --out /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_1240K_0.05

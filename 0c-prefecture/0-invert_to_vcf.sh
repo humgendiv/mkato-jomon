@@ -1,0 +1,1 @@
+plink --bfile /home1/mkato/hdd_data/1-merged_data/sample/merged/m_merged_jomon --recode vcf bgz --out /home1/mkato/hdd_data/2-1-prefectural_conparison/jomon
