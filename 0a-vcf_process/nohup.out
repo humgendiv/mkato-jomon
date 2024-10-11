@@ -1143,3 +1143,1418 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
     raise self._exception
 subprocess.CalledProcessError: Command '['plink', '--bfile', '/home/mkato/hdd_data/0-genome_data/F23/processed/F23_part1-temporary', '--extract', '/home/mkato/hdd_data/data/bim/merged_positions.bim', '--make-bed', '--out', '/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part1-temporary_extracted_1240K']' returned non-zero exit status 3.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I1/processed/I1_all.g_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+493945000 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 673229 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+673229 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I1/processed/I1_all.g_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+656864244 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 855548 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+855548 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I1/processed/I1_all.g_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+239933319 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 316690 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+316690 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I1/processed/I1_all.g_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+384074359 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 548138 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+548138 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I1/processed/I1_all.g_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+257385732 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 353324 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+353324 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I1/extracted/I1_all.g_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+Error: Failed to open /home/mkato/hdd_data/1-merged_data/for_PRS/I1_merged.log.  Try changing the --out parameter.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/T5/processed/T5_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+483714560 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 650159 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+650159 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/T5/processed/T5_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+232324363 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 301775 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+301775 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/T5/processed/T5_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+251161708 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 339629 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+339629 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/T5/processed/T5_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+374832220 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 527613 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+527613 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/T5/processed/T5_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+643156343 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 826737 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+826737 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/T5/extracted/T5_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+Error: Failed to open /home/mkato/hdd_data/1-merged_data/for_PRS/T5_merged.log.  Try changing the --out parameter.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+603370574 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 904813 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999904.
+904813 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+478055974 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 723786 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999906.
+723786 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+793740057 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 1093781 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999941.
+1093781 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+320853994 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 445256 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999933.
+445256 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+321264301 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 460660 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999948.
+460660 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/F23_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/F23/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/F23_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Warning: First fileset to be merged contains duplicate variant ID(s).  Variants
+with matching IDs are all merged together; if this is not what you want (e.g.
+you have a bunch of novel variants, all with ID "."), assign distinct IDs to
+them (with e.g. --set-missing-var-ids) before rerunning this merge.
+Error: 497 variants with 3+ alleles present.
+* If you believe this is due to strand inconsistency, try --flip with
+  /home/mkato/hdd_data/1-merged_data/for_PRS/F23_merged-merge.missnp.
+  (Warning: if this seems to work, strand errors involving SNPs with A/T or C/G
+  alleles probably remain in your data.  If LD between nearby SNPs is high,
+  --flip-scan should detect them.)
+* If you are dealing with genuine multiallelic variants, we recommend exporting
+  that subset of the data to VCF (via e.g. '--recode vcf'), merging with
+  another tool/script, and then importing the result; PLINK is not yet suited
+  to handling them.
+See https://www.cog-genomics.org/plink/1.9/data#merge3 for more discussion.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I15/processed/I15_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+1585194 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 345756 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998051.
+345756 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I15/processed/I15_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+1321263 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 275329 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998173.
+275329 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I15/processed/I15_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+912345 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 162868 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998097.
+162868 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I15/processed/I15_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+877221 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 171019 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998269.
+171019 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I15/processed/I15_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+2065002 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 417854 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998095.
+417854 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I15/extracted/I15_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/I15/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Performing single-pass merge (1 person, 2517751 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.                                              Merged fileset written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged-merge.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged-merge.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged-merge.fam .
+2517751 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.998251.
+2517751 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mb3/processed/FM020_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+604788249 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 856424 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999828.
+856424 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mb3/processed/FM020_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+321307654 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 453062 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999834.
+453062 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mb3/processed/FM020_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+314383385 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 428174 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99982.
+428174 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mb3/processed/FM020_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+801858699 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 1083634 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999846.
+1083634 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mb3/processed/FM020_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+477070558 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 709672 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999821.
+709672 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mb3/extracted/FM020_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/Mb3/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Performing single-pass merge (1 person, 8789879 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.                                              Merged fileset written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged-merge.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged-merge.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged-merge.fam .
+8789879 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.9999.
+8789879 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/C3/processed/FM027-2_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+286483911 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 418794 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999721.
+418794 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/C3/processed/FM027-2_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+123063330 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 186976 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.99969.
+186976 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/C3/processed/FM027-2_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+137003025 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 198132 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999627.
+198132 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/C3/processed/FM027-2_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+215661060 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 342754 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999644.
+342754 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/C3/processed/FM027-2_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+181921679 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 288969 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999689.
+288969 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/C3/extracted/FM027-2_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/C3/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Performing single-pass merge (1 person, 3439321 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.                                              Merged fileset written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged-merge.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged-merge.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged-merge.fam .
+3439321 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999797.
+3439321 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I4/processed/I4_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+629457244 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 806771 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+806771 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I4/processed/I4_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+244177485 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 328606 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+328606 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I4/processed/I4_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+473377301 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 634480 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+634480 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I4/processed/I4_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+364828611 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 511388 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+511388 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/I4/processed/I4_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+221948755 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 285868 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+285868 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/I4/extracted/I4_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/I4/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Warning: First fileset to be merged contains duplicate variant ID(s).  Variants
+with matching IDs are all merged together; if this is not what you want (e.g.
+you have a bunch of novel variants, all with ID "."), assign distinct IDs to
+them (with e.g. --set-missing-var-ids) before rerunning this merge.
+Performing single-pass merge (1 person, 6472006 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.                                              Merged fileset written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged-merge.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged-merge.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged-merge.fam .
+6472006 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+6472006 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mt3/processed/FM027-1_part_9_12
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+319417759 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps.nosex
+.
+--extract: 480197 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999717.
+480197 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_9_12_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mt3/processed/FM027-1_part_1_4
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+525180708 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps.nosex
+.
+--extract: 722760 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999708.
+722760 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_1_4_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mt3/processed/FM027-1_part_13_16
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+215123442 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps.nosex
+.
+--extract: 309026 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999722.
+309026 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_13_16_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mt3/processed/FM027-1_part_17_22
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+218887662 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps.nosex
+.
+--extract: 301153 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999671.
+301153 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_17_22_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/Mt3/processed/FM027-1_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+398211844 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 593662 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999638.
+593662 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/Mt3/extracted/FM027-1_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged.log.
+Options in effect:
+  --make-bed
+  --merge-list /home/mkato/hdd_data/0-genome_data/Mt3/extracted/merge_list.txt
+  --out /home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+Performing single-pass merge (1 person, 5862034 variants).
+Pass 1: fileset #1 complete.Pass 1: fileset #2 complete.Pass 1: fileset #3 complete.Pass 1: fileset #4 complete.Pass 1: fileset #5 complete.Pass 1: fileset #6 complete.Pass 1: fileset #7 complete.Pass 1: fileset #8 complete.Pass 1: fileset #9 complete.                                              Merged fileset written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged-merge.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged-merge.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged-merge.fam .
+5862034 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999797.
+5862034 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged.bed +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged.bim +
+/home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged.fam ... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.
+Processing sample: I1
+Extracted SNPs for I1 from I1_all.g_part_5_8.bed
+Extracted SNPs for I1 from I1_all.g_part_1_4.bed
+Extracted SNPs for I1 from I1_all.g_part_17_22.bed
+Extracted SNPs for I1 from I1_all.g_part_9_12.bed
+Extracted SNPs for I1 from I1_all.g_part_13_16.bed
+Failed to merge parts for I1. Error: Command '['plink', '--merge-list', '/home/mkato/hdd_data/0-genome_data/I1/extracted/merge_list.txt', '--make-bed', '--out', '/home/mkato/hdd_data/1-merged_data/for_PRS/I1_merged']' returned non-zero exit status 2.
+Processing sample: T5
+Extracted SNPs for T5 from T5_part_5_8.bed
+Extracted SNPs for T5 from T5_part_17_22.bed
+Extracted SNPs for T5 from T5_part_13_16.bed
+Extracted SNPs for T5 from T5_part_9_12.bed
+Extracted SNPs for T5 from T5_part_1_4.bed
+Failed to merge parts for T5. Error: Command '['plink', '--merge-list', '/home/mkato/hdd_data/0-genome_data/T5/extracted/merge_list.txt', '--make-bed', '--out', '/home/mkato/hdd_data/1-merged_data/for_PRS/T5_merged']' returned non-zero exit status 2.
+Processing sample: F23
+Extracted SNPs for F23 from F23_part_5_8.bed
+Extracted SNPs for F23 from F23_part_9_12.bed
+Extracted SNPs for F23 from F23_part_1_4.bed
+Extracted SNPs for F23 from F23_part_17_22.bed
+Extracted SNPs for F23 from F23_part_13_16.bed
+Failed to merge parts for F23. Error: Command '['plink', '--merge-list', '/home/mkato/hdd_data/0-genome_data/F23/extracted/merge_list.txt', '--make-bed', '--out', '/home/mkato/hdd_data/1-merged_data/for_PRS/F23_merged']' returned non-zero exit status 3.
+Processing sample: I15
+Extracted SNPs for I15 from I15_part_5_8.bed
+Extracted SNPs for I15 from I15_part_9_12.bed
+Extracted SNPs for I15 from I15_part_17_22.bed
+Extracted SNPs for I15 from I15_part_13_16.bed
+Extracted SNPs for I15 from I15_part_1_4.bed
+Merged part files for I15 into /home/mkato/hdd_data/1-merged_data/for_PRS/I15_merged
+Processing sample: Mb3
+Extracted SNPs for Mb3 from FM020_part_5_8.bed
+Extracted SNPs for Mb3 from FM020_part_13_16.bed
+Extracted SNPs for Mb3 from FM020_part_17_22.bed
+Extracted SNPs for Mb3 from FM020_part_1_4.bed
+Extracted SNPs for Mb3 from FM020_part_9_12.bed
+Merged part files for Mb3 into /home/mkato/hdd_data/1-merged_data/for_PRS/Mb3_merged
+Processing sample: C3
+Extracted SNPs for C3 from FM027-2_part_1_4.bed
+Extracted SNPs for C3 from FM027-2_part_13_16.bed
+Extracted SNPs for C3 from FM027-2_part_17_22.bed
+Extracted SNPs for C3 from FM027-2_part_5_8.bed
+Extracted SNPs for C3 from FM027-2_part_9_12.bed
+Merged part files for C3 into /home/mkato/hdd_data/1-merged_data/for_PRS/C3_merged
+Processing sample: I4
+Extracted SNPs for I4 from I4_part_1_4.bed
+Extracted SNPs for I4 from I4_part_13_16.bed
+Extracted SNPs for I4 from I4_part_5_8.bed
+Extracted SNPs for I4 from I4_part_9_12.bed
+Extracted SNPs for I4 from I4_part_17_22.bed
+Merged part files for I4 into /home/mkato/hdd_data/1-merged_data/for_PRS/I4_merged
+Processing sample: Mt3
+Extracted SNPs for Mt3 from FM027-1_part_9_12.bed
+Extracted SNPs for Mt3 from FM027-1_part_1_4.bed
+Extracted SNPs for Mt3 from FM027-1_part_13_16.bed
+Extracted SNPs for Mt3 from FM027-1_part_17_22.bed
+Extracted SNPs for Mt3 from FM027-1_part_5_8.bed
+Merged part files for Mt3 into /home/mkato/hdd_data/1-merged_data/for_PRS/Mt3_merged
+All samples have been processed.
+PLINK v1.90b7 64-bit (16 Jan 2023)             www.cog-genomics.org/plink/1.9/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0-genome_data/F23/processed/F23_part_5_8
+  --extract /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt
+  --make-bed
+  --out /home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps
+
+257567 MB RAM detected; reserving 128783 MB for main workspace.
+603370574 variants loaded from .bim file.
+1 person (0 males, 0 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.nosex
+.
+--extract: 904813 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is 0.999904.
+904813 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--make-bed to
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.bed
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.bim
++
+/home/mkato/hdd_data/0-genome_data/F23/extracted/F23_part_5_8_extracted_unique_snps.fam
+... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%done.

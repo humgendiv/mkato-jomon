@@ -1,5 +1,6 @@
 parent_dir: /home/mkato/hdd_data/0-genome_data  # 0-genome_dataディレクトリのパス
-extract_file: /home/mkato/hdd_data/data/bim/merged_positions.bim  # 抽出に使うbimファイル
-output_dir: /home/mkato/hdd_data/1-merged_data/sample  # マージ結果の保存先
+#extract_file: /home/mkato/hdd_data/data/bim/merged_positions.bim  # 抽出に使うbimファイル
+extract_file: /home/mkato/hdd_data/2-2-polygenic/unique_snps.txt  # 抽出に使うbimファイル
+output_dir: /home/mkato/hdd_data/1-merged_data/for_PRS  # マージ結果の保存先
 samples: [F23]
 
