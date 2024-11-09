@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #!ここを変える！(基本的にbedフォルダ内にすること)
-bed_folder="for_merge" # フォルダ名を指定する
+bed_folder="for_PRS" # フォルダ名を指定する
 file_name="jomons_for_PRS" # 生成ファイル名を指定する
 
 folder_path="/home1/mkato/hdd_data/1-merged_data/${bed_folder}" # フォルダのパスを指定する

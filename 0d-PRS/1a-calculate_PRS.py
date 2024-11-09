@@ -1,5 +1,4 @@
 import os
-import gzip
 import pandas as pd
 
 # 入力ファイルのディレクトリパス
@@ -12,8 +11,8 @@ output_dir = "/home/mkato/hdd_data/2-2-polygenic/PRS_scores"
 # P値の閾値リスト
 p_thresholds = [0.01, 0.001, 0.0001]
 
-# 除外するサンプル名のリスト
-exclude_samples = ["0_FM027-2_DS_PG0301_005", "0_Iyai15", "0_DO"]  # このリストに除外したいサンプル名を追加
+# 除外したいサンプル名をリストにする
+exclude_samples = ["0_FM027-2_DS_PG0301_005", "0_FM027-1_DS_PG0301_005", "0_T5", "0_Jomon", "0_FM020"]  # このリストに除外したいサンプル名を追加
 
 # 縄文人個体のvcfファイルからSNPと個体名を取得
 vcf_snps = {}
@@ -55,7 +54,7 @@ with open(freq_file, "r") as f:
 # 各P値の閾値について処理を行う
 for p_threshold in p_thresholds:
     # 結果を格納するデータフレームを初期化
-    result_df = pd.DataFrame(index=sample_names + ["Japanese"])
+    result_df = pd.DataFrame(index=[sample for i, sample in enumerate(sample_names) if i not in exclude_indices] + ["Japanese"])
     
     # 各形質のファイルを処理
     for filename in os.listdir(trait_dir):
@@ -77,10 +76,10 @@ for p_threshold in p_thresholds:
             
             # 共通のSNPを取得
             common_snps_vcf = set(vcf_snps.keys()) & set(trait_snps.keys()) & set(freq_snps.keys()) 
-            common_snps_freq = common_snps_vcf #set(freq_snps.keys()) & set(trait_snps.keys())
+            common_snps_freq = common_snps_vcf
             
             # ポリジェニックスコアを計算
-            prs_scores_jomon = [0] * len(sample_names)
+            prs_scores_jomon = [0] * (len(sample_names) - len(exclude_indices))
             for snp in common_snps_vcf:
                 beta = trait_snps[snp]
                 genotypes = vcf_snps[snp]

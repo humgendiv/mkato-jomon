@@ -38,15 +38,17 @@ def extract_snps_for_sample(sample_name, extract_file, sample_dir, output_dir):
                 print(f"Extracted SNPs for {sample_name} from {bed_file}")
 
 # 複数のパートファイルをマージする関数
-def merge_sample_parts(sample_name, sample_dir, output_dir):
+def merge_sample_parts(sample_name, sample_dir, output_dir, extract_file):
     extracted_dir = os.path.join(sample_dir, "extracted")
     merged_output = os.path.join(output_dir, f"{sample_name}_merged")
+
+    extract_base_name = os.path.splitext(os.path.basename(extract_file))[0]
 
     # .bimファイルを基にマージリストを生成
     merge_list_file = os.path.join(extracted_dir, "merge_list.txt")
     with open(merge_list_file, 'w') as f:
         for file in os.listdir(extracted_dir):
-            if file.endswith('.bim'):
+            if file.endswith('.bim') and extract_base_name in file:
                 base_name = os.path.splitext(file)[0]
                 f.write(f"{os.path.join(extracted_dir, base_name)}\n")
 
@@ -84,7 +86,7 @@ def main(config_file):
         extract_snps_for_sample(sample_name, extract_file, sample_dir, output_dir)
 
         # 2. パートファイルのマージ
-        merge_sample_parts(sample_name, sample_dir, output_dir)
+        merge_sample_parts(sample_name, sample_dir, output_dir, extract_file)
 
     print("All samples have been processed.")
 

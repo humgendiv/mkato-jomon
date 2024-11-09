@@ -1,0 +1,1 @@
+plink --bfile /home1/mkato/hdd_data/1-merged_data/for_PRS/merged/m_jomons_for_PRS --recode vcf --out /home1/mkato/hdd_data/1-merged_data/for_PRS/merged/m_jomons_for_PRS
