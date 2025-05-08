@@ -1,0 +1,4 @@
+[E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/0_1_vcf/filtered_1240K/F23.vcf.gz'
+Failed to open /home/mkato/hdd_data/0_1_vcf/filtered_1240K/F23.vcf.gz: could not load index
+index: failed to open /home/mkato/hdd_data/0_1_vcf/merged.1240K.vcf.gz
+[DONE] Merged VCF created at: /home/mkato/hdd_data/0_1_vcf/merged.1240K.vcf.gz

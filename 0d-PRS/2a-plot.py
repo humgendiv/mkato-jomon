@@ -11,7 +11,7 @@ def plot_PRS_diff(threshold, sort_by="mean"):
     """
     
     # データの読み込み
-    data = pd.read_csv(f"/home/mkato/hdd_data/2-2-polygenic/PRS_scores/PRS_scores_p{threshold}.txt", sep="\t", comment="#", index_col=0)
+    data = pd.read_csv(f"/home/mkato/hdd_data/2-2-polygenic/PRS_scores/PRS_scores_p{threshold}_copy.txt", sep="\t", comment="#", index_col=0)
 
     # 現代日本人の値を引いて差分を計算
     jomon_diff = data.iloc[:-1, :] - data.iloc[-1, :]
@@ -45,7 +45,7 @@ def plot_PRS_diff(threshold, sort_by="mean"):
     # 軸ラベルとタイトルの設定
     ax.set_xlabel("Difference from Modern Japanese")
     ax.set_ylabel("Traits")
-    ax.set_title(f"Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = {threshold}, sorted by {sort_by})")
+    ax.set_title(f"Polygenic Risk Score Differences between Jomon and Modern Japanese (GWAS P-value threshold = {threshold})")#, sorted by {sort_by})")
 
     # 0のラインを赤く太めに設定
     ax.axvline(x=0, color='red', linewidth=2)
@@ -58,8 +58,8 @@ def plot_PRS_diff(threshold, sort_by="mean"):
 
     # 図の保存と表示
     plt.tight_layout()
-    plt.savefig(f"PRS_diff_Jomon_vs_Japanese_p{threshold}_sorted_by_{sort_by}.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"PRS_diff_Jomon_vs_Japanese_p{threshold}_sorted_by_{sort_by}_copy.png", dpi=300, bbox_inches="tight")
 
 # 実行
-#plot_PRS_diff(0.01, sort_by="mean")     # 平均値でソート
-plot_PRS_diff(0.01, sort_by="variance") # 分散でソート
+plot_PRS_diff(0.01, sort_by="mean")     # 平均値でソート
+#plot_PRS_diff(0.01, sort_by="variance") # 分散でソート
