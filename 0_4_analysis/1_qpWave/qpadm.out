@@ -1,0 +1,179 @@
+/home/mkato/Repo/AdmixTools/bin/qpAdm: parameter file: ./1p_qpAdm.par
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.geno
+snpname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.snp
+indivname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.fixed.ind
+popleft: ./left.TS.pops
+popright: ./right.pops
+details: YES
+maxrank: 3
+##  /home/mkato/Repo/AdmixTools/bin/qpAdm -p ./1p_qpAdm.par
+## qpAdm version: 2050
+seed: 1144204729
+allsnps set NO.  It is recommended that allsnps be set explicitly
+ *** recommended that inbreed be explicitly set ***
+inbreed set NO
+packed geno read OK
+end of inpack
+
+left pops:
+Japan_MidAndLate_Jomon      3
+   Japan_Early_Jomon      2
+                 Han     45
+
+right pops:
+            Mbuti.DG     14
+    Russia_Ust_Ishim      1
+   Russia_Kostenki14      1
+       Russia_MA1_HG      1
+              Papuan     28
+           Karitiana     14
+ Russia_DevilsCave_N      4
+      China_Tianyuan      1
+
+jackknife block size:     0.050
+snps: 854875  indivs: 114
+number of blocks for block jackknife: 714
+## ncols: 854875
+coverage: Japan_MidAndLate_Jomon 681497
+coverage:    Japan_Early_Jomon 681497
+coverage:                  Han 854472
+coverage:             Mbuti.DG 854453
+coverage:     Russia_Ust_Ishim 854679
+coverage:    Russia_Kostenki14 777818
+coverage:        Russia_MA1_HG 596819
+coverage:               Papuan 854462
+coverage:            Karitiana 854441
+coverage:  Russia_DevilsCave_N 853201
+coverage:       China_Tianyuan 646731
+Effective number of blocks:   623.511
+numsnps used: 351071
+codimension 1
+f4info: 
+f4rank: 1 dof:      6 chisq:    34.944 tail:       4.41780792e-06 dofdiff:      8 chisqdiff:   -34.944 taildiff:                    1
+B:
+          scale     1.000 
+Russia_Ust_Ishim     0.221 
+Russia_Kostenki14     0.186 
+  Russia_MA1_HG     0.277 
+         Papuan     0.421 
+      Karitiana     1.571 
+Russia_DevilsCave_N     1.904 
+ China_Tianyuan     0.756 
+A:
+          scale   313.473 
+Japan_Early_Jomon    -0.337 
+            Han     1.374 
+
+
+full rank
+f4info: 
+f4rank: 2 dof:      0 chisq:     0.000 tail:                    1 dofdiff:      6 chisqdiff:    34.944 taildiff:       4.41780792e-06
+B:
+          scale   433.847   254.759 
+Russia_Ust_Ishim    -0.549     0.150 
+Russia_Kostenki14    -0.860    -0.069 
+  Russia_MA1_HG    -0.762     0.092 
+         Papuan    -1.050     0.161 
+      Karitiana    -1.197     1.580 
+Russia_DevilsCave_N    -1.191     2.034 
+ China_Tianyuan    -1.193     0.554 
+A:
+          scale     1.414     1.414 
+Japan_Early_Jomon     1.414     0.000 
+            Han     0.000     1.414 
+
+
+best coefficients:     0.803     0.197 
+Jackknife mean:      0.802600515     0.197399485 
+      std. errors:     0.037     0.037 
+
+error covariance (* 1,000,000)
+      1364      -1364 
+     -1364       1364 
+
+
+summ: Japan_MidAndLate_Jomon    2      0.000004     0.803     0.197       1364      -1364       1364 
+
+    fixed pat  wt  dof     chisq       tail prob
+           00  0     6    34.944     4.41781e-06     0.803     0.197 
+           01  1     7    62.848     4.06624e-11     1.000     0.000 
+           10  1     7   385.659               0     0.000     1.000 
+best pat:           00      4.41781e-06              -  -
+best pat:           01      4.06624e-11  chi(nested):    27.903 p-value for nested model:     1.27539e-07
+
+coeffs:     0.803     0.197 
+
+## dscore:: f_4(Base, Fit, Rbase, right2)
+## genstat:: f_4(Base, Fit, right1, right2)
+
+details:    Japan_Early_Jomon     Russia_Ust_Ishim    -0.001265   -2.645765
+details:                  Han     Russia_Ust_Ishim     0.000590    1.056930
+dscore:     Russia_Ust_Ishim f4:    -0.000899 Z:    -2.073544
+
+details:    Japan_Early_Jomon    Russia_Kostenki14    -0.001983   -3.945593
+details:                  Han    Russia_Kostenki14    -0.000272   -0.482258
+dscore:    Russia_Kostenki14 f4:    -0.001646 Z:    -3.643354
+
+details:    Japan_Early_Jomon        Russia_MA1_HG    -0.001757   -3.610108
+details:                  Han        Russia_MA1_HG     0.000363    0.617874
+dscore:        Russia_MA1_HG f4:    -0.001340 Z:    -3.025699
+
+details:    Japan_Early_Jomon               Papuan    -0.002420   -6.092273
+details:                  Han               Papuan     0.000631    1.349088
+dscore:               Papuan f4:    -0.001819 Z:    -5.079386
+
+details:    Japan_Early_Jomon            Karitiana    -0.002759   -6.233633
+details:                  Han            Karitiana     0.006202   12.837510
+dscore:            Karitiana f4:    -0.000995 Z:    -2.484468
+
+details:    Japan_Early_Jomon  Russia_DevilsCave_N    -0.002746   -6.375006
+details:                  Han  Russia_DevilsCave_N     0.007982   15.747768
+dscore:  Russia_DevilsCave_N f4:    -0.000633 Z:    -1.632890
+
+details:    Japan_Early_Jomon       China_Tianyuan    -0.002750   -5.271226
+details:                  Han       China_Tianyuan     0.002173    3.742020
+dscore:       China_Tianyuan f4:    -0.001780 Z:    -3.801885
+
+gendstat:             Mbuti.DG     Russia_Ust_Ishim    -2.074
+gendstat:             Mbuti.DG    Russia_Kostenki14    -3.643
+gendstat:             Mbuti.DG        Russia_MA1_HG    -3.026
+gendstat:             Mbuti.DG               Papuan    -5.079
+gendstat:             Mbuti.DG            Karitiana    -2.484
+gendstat:             Mbuti.DG  Russia_DevilsCave_N    -1.633
+gendstat:             Mbuti.DG       China_Tianyuan    -3.802
+gendstat:     Russia_Ust_Ishim    Russia_Kostenki14    -1.465
+gendstat:     Russia_Ust_Ishim        Russia_MA1_HG    -0.844
+gendstat:     Russia_Ust_Ishim               Papuan    -2.066
+gendstat:     Russia_Ust_Ishim            Karitiana    -0.202
+gendstat:     Russia_Ust_Ishim  Russia_DevilsCave_N     0.550
+gendstat:     Russia_Ust_Ishim       China_Tianyuan    -1.601
+gendstat:    Russia_Kostenki14        Russia_MA1_HG     0.613
+gendstat:    Russia_Kostenki14               Papuan    -0.376
+gendstat:    Russia_Kostenki14            Karitiana     1.349
+gendstat:    Russia_Kostenki14  Russia_DevilsCave_N     2.000
+gendstat:    Russia_Kostenki14       China_Tianyuan    -0.250
+gendstat:        Russia_MA1_HG               Papuan    -1.025
+gendstat:        Russia_MA1_HG            Karitiana     0.770
+gendstat:        Russia_MA1_HG  Russia_DevilsCave_N     1.433
+gendstat:        Russia_MA1_HG       China_Tianyuan    -0.813
+gendstat:               Papuan            Karitiana     2.117
+gendstat:               Papuan  Russia_DevilsCave_N     3.022
+gendstat:               Papuan       China_Tianyuan     0.084
+gendstat:            Karitiana  Russia_DevilsCave_N     0.933
+gendstat:            Karitiana       China_Tianyuan    -1.602
+gendstat:  Russia_DevilsCave_N       China_Tianyuan    -2.399
+
+worst Z-score with right hand mix
+f4(Target, Fit, Base, mix of Right pops;  Z:    -5.916 sum:     1.000
+              Russia_Ust_Ishim    -0.046
+             Russia_Kostenki14     0.224
+                 Russia_MA1_HG     0.151
+                        Papuan     0.721
+                     Karitiana    -0.081
+           Russia_DevilsCave_N    -0.240
+                China_Tianyuan     0.271
+
+oldmode set: terminating
+##end of qpAdm:       18.882 seconds cpu     1004.560 Mbytes in use

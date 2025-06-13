@@ -1,0 +1,13 @@
+parameter file: 3_convert2EIGEN.par
+genotypename: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.bed
+snpname: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.bim
+indivname: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.trunc.fam
+outputformat: EIGENSTRAT
+genotypeoutname: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.eigenstrat.geno
+snpoutname: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.eigenstrat.snp
+indivoutname: /home/mkato/hdd_data/0_2_1240K/merged_with_1240K.eigenstrat.ind
+familynames: NO
+genotype file processed
+numvalidind:  16410  maxmiss: 16410001
+eigenstrat output
+##end of convertf run

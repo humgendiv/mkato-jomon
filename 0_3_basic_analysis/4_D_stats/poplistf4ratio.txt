@@ -1,0 +1,10 @@
+Dai     Mbuti.DG   Japanese   Japan_Iyai_Jomon    Dai     Mbuti.DG   Korean   Japan_Iyai_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Todoroki  Dai     Mbuti.DG   Korean   Japan_Todoroki
+Dai     Mbuti.DG   Japanese   Japan_Funadomari_Jomon    Dai     Mbuti.DG   Korean   Japan_Funadomari_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Chidorigakubo_Jomon  Dai     Mbuti.DG   Korean   Japan_Chidorigakubo_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Mitsusawa    Dai     Mbuti.DG   Korean   Japan_Mitsusawa
+Dai     Mbuti.DG   Japanese   Japan_Iyai_Jomon    Dai     Mbuti.DG   Han   Japan_Iyai_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Todoroki  Dai     Mbuti.DG   Han   Japan_Todoroki
+Dai     Mbuti.DG   Japanese   Japan_Funadomari_Jomon    Dai     Mbuti.DG   Han   Japan_Funadomari_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Chidorigakubo_Jomon  Dai     Mbuti.DG   Han   Japan_Chidorigakubo_Jomon
+Dai     Mbuti.DG   Japanese   Japan_Mitsusawa    Dai     Mbuti.DG   Han   Japan_Mitsusawa

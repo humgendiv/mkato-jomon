@@ -1,0 +1,32 @@
+
+TreeMix v. 1.13
+$Revision: 231 $
+
+npop:10 nsnp:719779
+Estimating covariance matrix in 1439 blocks of size 500
+SEED: 1748513563
+Starting from:
+((Mbuti:0.0918108,Han:0.00623978):0.00748151,Japanese:0.00748151);
+Adding MidJomon [4/10]
+ln(likelihood): -5380.6114 
+((Mbuti:0.0949985,Han:0.0103496):0.00127098,(Japanese:0.00808383,MidJomon:0.0700218):0.00127098);
+Adding She [5/10]
+ln(likelihood): -11385.72 
+((Mbuti:0.0938253,(Han:0.00296915,She:0.0127513):0.00828001):0.00211457,(Japanese:0.00587278,MidJomon:0.0695886):0.00211457);
+Adding Ami [6/10]
+ln(likelihood): -8680.7762 
+((Ami:0.0477202,(((Han:0.000640319,She:0.0103453):0.00198115,Japanese:0.000631364):0,Mbuti:0.0881614):0):0.0376478,MidJomon:0.0376478);
+Adding Ulchi [7/10]
+ln(likelihood): -3015.4942 
+((Ami:0.0495259,(((Han:0.00161052,She:0.0113262):0.00302153,(Japanese:0.00241098,Ulchi:0.0462241):0):0,Mbuti:0.0901394):0):0.0401721,MidJomon:0.0401721);
+Adding EarlyJomon [8/10]
+ln(likelihood): -509.27437 
+((((Japanese:0.00203133,((She:0.0114221,Ami:0.0474475):0.000451823,Han:0.00203174):0.00410701):0.000772496,Ulchi:0.0461322):0.00629773,Mbuti:0.0881424):0.0167651,(MidJomon:0.0442441,EarlyJomon:0.0405897):0.0167651);
+Adding Korean [9/10]
+ln(likelihood): -790.9819 
+(MidJomon:0.0223772,(EarlyJomon:0.039488,(((Japanese:0.00171198,(((She:0.0114393,Ami:0.0475829):0.000537215,Han:0.00208903):0.00109138,Korean:0.0405794):0.00300281):0.000707847,Ulchi:0.0455643):0.00781402,Mbuti:0.0863272):0.0326311):0.0223772);
+Adding LateJomon [10/10]
+ln(likelihood): -184.92957 
+((EarlyJomon:0.0391048,(MidJomon:0.0418701,LateJomon:0.0813935):0.000957163):0.0167378,(((Japanese:0.00136942,(((She:0.0113162,Ami:0.0474162):0.000510792,Han:0.00195004):0.00111628,Korean:0.0404223):0.00343019):0.000669119,Ulchi:0.04534):0.00722981,Mbuti:0.0865336):0.0167378);
+Set root above Mbuti
+DONE.

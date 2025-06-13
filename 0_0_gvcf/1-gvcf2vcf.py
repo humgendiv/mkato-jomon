@@ -50,7 +50,7 @@ DEFAULT_CFG: Dict[str, Any] = {
         "remove_chr_prefix": True,  # 'chr' を削除
         "remove_non_ref": True,     # ALT の <NON_REF> を除去
         "assign_id": True,          # CHROM:POS を ID に設定
-        "expand_end": True,         # END=xxx を 1 bp ずつ展開
+        "expand_end": False,         # END=xxx を 1 bp ずつ展開
     },
 }
 

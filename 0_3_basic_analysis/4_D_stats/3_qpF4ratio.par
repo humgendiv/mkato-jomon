@@ -1,0 +1,9 @@
+SSS: allmap
+
+# 入力ファイル
+genotypename: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.geno
+snpname:      /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.snp
+indivname:    /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.fixed.ind
+popfilename:  /home/mkato/mkato-jomon/0_3_basic_analysis/4_D_stats/poplistf4ratio.txt
+
+detail: YES

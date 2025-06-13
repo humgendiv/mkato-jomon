@@ -1,0 +1,8 @@
+Ami.DG
+Han.DG
+Japanese.DG
+Korean.DG
+She.DG
+Ulchi.DG
+Mbuti.DG
+0

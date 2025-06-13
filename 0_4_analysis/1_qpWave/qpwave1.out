@@ -1,0 +1,67 @@
+/home/mkato/Repo/AdmixTools/bin/qpWave: parameter file: ./1p_qpWave1.par
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.geno
+snpname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.snp
+indivname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.fixed.ind
+popleft: ./left.sources.pops
+popright: ./right.pops
+details: YES
+maxrank: 3
+##  /home/mkato/Repo/AdmixTools/bin/qpWave -p ./1p_qpWave1.par
+## qpWave version: 1570
+ *** recommended that inbreed be explicitly set ***
+allsnps set NO.  It is recommended that allsnps be set explicitly
+ *** recommended that inbreed be explicitly set ***
+inbreed set NO
+packed geno read OK
+end of inpack
+
+left pops:
+   Japan_Early_Jomon      2
+                 Han     45
+
+right pops:
+            Mbuti.DG     14
+    Russia_Ust_Ishim      1
+   Russia_Kostenki14      1
+       Russia_MA1_HG      1
+              Papuan     28
+           Karitiana     14
+ Russia_DevilsCave_N      4
+      China_Tianyuan      1
+
+  0    Japan_Early_Jomon    2
+  1                  Han   45
+  2             Mbuti.DG   14
+  3     Russia_Ust_Ishim    1
+  4    Russia_Kostenki14    1
+  5        Russia_MA1_HG    1
+  6               Papuan   28
+  7            Karitiana   14
+  8  Russia_DevilsCave_N    4
+  9       China_Tianyuan    1
+jackknife block size:     0.050
+snps: 854875  indivs: 111
+number of blocks for block jackknife: 714
+Effective number of blocks:   623.552
+numsnps used: 353229
+f4info: 
+f4rank: 0 dof:      7 chisq:   505.857 tail:      4.41384583e-105 dofdiff:      0 chisqdiff:     0.000 taildiff:                    1
+
+f4info: 
+f4rank: 1 dof:      0 chisq:     0.000 tail:                    1 dofdiff:      7 chisqdiff:   505.857 taildiff:      4.41384583e-105
+B:
+          scale   171.902 
+Russia_Ust_Ishim     0.317 
+Russia_Kostenki14     0.292 
+  Russia_MA1_HG     0.362 
+         Papuan     0.521 
+      Karitiana     1.531 
+Russia_DevilsCave_N     1.833 
+ China_Tianyuan     0.841 
+A:
+          scale     1.000 
+            Han     1.000 
+
+##end of qpWave:       17.715 seconds cpu      976.929 Mbytes in use

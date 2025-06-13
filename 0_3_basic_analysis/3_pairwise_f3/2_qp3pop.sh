@@ -1,0 +1,1 @@
+/home/mkato/Repo/AdmixTools/bin/qp3Pop -p ./1_qp3pop.par > qp3pop.log 2>&1

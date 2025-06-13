@@ -1,0 +1,9 @@
+geno1: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops.geno
+snp1:  /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops.snp
+ind1:  /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops.ind
+geno2: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.geno
+snp2:  /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.snp
+ind2:  /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.ind
+genooutfilename: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.geno
+snpoutfilename:    /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.snp
+indoutfilename:    /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.ind

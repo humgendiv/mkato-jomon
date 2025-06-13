@@ -1,0 +1,1 @@
+/home/mkato/Repo/AdmixTools/bin/qpDstat -p ./1_qpDstat.par > qpDstat.log 2>&1

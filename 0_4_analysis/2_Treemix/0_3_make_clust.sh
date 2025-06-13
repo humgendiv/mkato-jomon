@@ -1,0 +1,1 @@
+bcftools query -l /home/mkato/hdd_data/0_4_analysis/2_Treemix/noN.vcf.gz | awk '{split($1,pop,"_"); print $1"\t"$1"\t"pop[1]}' > /home/mkato/hdd_data/0_4_analysis/2_Treemix/pops.clust

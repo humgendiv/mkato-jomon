@@ -1,0 +1,75 @@
+/home/mkato/Repo/AdmixTools/bin/qpDstat: parameter file: ./1_qpDstat.par
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.geno
+snpname: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.snp
+indivname: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_Mbuti.fixed.ind
+f4mode: YES
+popfilename: /home/mkato/mkato-jomon/0_3_basic_analysis/4_D_stats/poplist.txt
+inbreed: YES
+inbreed_override: YES
+allsnps: YES
+outfile: /home/mkato/mkato-jomon/0_3_basic_analysis/4_D_stats/f4_results.txt
+## qpDstat version: 1152
+inbreed set YES
+packed geno read OK
+end of inpack
+number of quadruples 43 locount: -1 hicount: 9999999
+  0             Mbuti.DG   14
+  1                  Han   45
+  2             Japanese   30
+  3               Korean    2
+  4               Oroqen   11
+  5     Iyai    2
+  6 Todoroki    1
+  7 Chidorigakubo    1
+  8 Mitsusawa    1
+  9 Funadomari    1
+jackknife block size:     0.050
+snps: 854758  indivs: 108
+number of blocks for block jackknife: 714
+nrows, ncols: 108 854758
+result:   Mbuti.DG        Han Iyai Funadomari      0.003051      6.761   45975  43897 681211 
+result:   Mbuti.DG        Han Iyai Chidorigakubo      0.002653      6.661   45426  43618 681211 
+result:   Mbuti.DG        Han Iyai Mitsusawa      0.003598      8.187   46019  43568 681211 
+result:   Mbuti.DG        Han Iyai Todoroki     -0.000217     -0.543   41716  41864 681211 
+result:   Mbuti.DG        Han Todoroki Funadomari      0.003268      6.810   46582  44356 681211 
+result:   Mbuti.DG        Han Todoroki Chidorigakubo      0.002870      6.519   45883  43928 681211 
+result:   Mbuti.DG        Han Todoroki Mitsusawa      0.003814      7.857   46489  43891 681211 
+result:   Mbuti.DG        Han Chidorigakubo Funadomari      0.000398      0.820   43687  43417 681211 
+result:   Mbuti.DG        Han Mitsusawa Funadomari     -0.000546     -1.128   43507  43879 681211 
+result:   Mbuti.DG        Han Mitsusawa Chidorigakubo     -0.000944     -2.083   42213  42856 681211 
+result:   Mbuti.DG   Japanese Iyai Funadomari      0.003372      7.550   46518  44221 681211 
+result:   Mbuti.DG   Japanese Iyai Chidorigakubo      0.002821      7.073   45897  43975 681211 
+result:   Mbuti.DG   Japanese Iyai Chidorigakubo      0.002821      7.073   45897  43975 681211 
+result:   Mbuti.DG   Japanese Iyai Mitsusawa      0.003866      9.015   46527  43894 681211 
+result:   Mbuti.DG   Japanese Iyai Todoroki     -0.000202     -0.501   42117  42254 681211 
+result:   Mbuti.DG   Japanese Todoroki Funadomari      0.003574      7.601   47118  44684 681211 
+result:   Mbuti.DG   Japanese Todoroki Chidorigakubo      0.003023      6.926   46341  44282 681211 
+result:   Mbuti.DG   Japanese Todoroki Mitsusawa      0.004067      8.475   46990  44219 681211 
+result:   Mbuti.DG   Japanese Chidorigakubo Funadomari      0.000551      1.155   44181  43806 681211 
+result:   Mbuti.DG   Japanese Mitsusawa Funadomari     -0.000494     -1.013   43956  44292 681211 
+result:   Mbuti.DG   Japanese Mitsusawa Chidorigakubo     -0.001044     -2.307   42584  43295 681211 
+result:   Mbuti.DG     Korean Iyai Funadomari      0.002567      4.567   44605  42902 663708 
+result:   Mbuti.DG     Korean Iyai Chidorigakubo      0.002274      4.544   44089  42580 663708 
+result:   Mbuti.DG     Korean Iyai Chidorigakubo      0.002274      4.544   44089  42580 663708 
+result:   Mbuti.DG     Korean Iyai Mitsusawa      0.003377      6.330   44709  42468 663708 
+result:   Mbuti.DG     Korean Iyai Todoroki     -0.000284     -0.558   40853  41041 663708 
+result:   Mbuti.DG     Korean Todoroki Funadomari      0.002850      4.745   45172  43280 663708 
+result:   Mbuti.DG     Korean Todoroki Chidorigakubo      0.002558      4.490   44576  42879 663708 
+result:   Mbuti.DG     Korean Todoroki Mitsusawa      0.003661      6.230   45199  42769 663708 
+result:   Mbuti.DG     Korean Chidorigakubo Funadomari      0.000292      0.491   42536  42342 663708 
+result:   Mbuti.DG     Korean Mitsusawa Funadomari     -0.000811     -1.369   42246  42784 663708 
+result:   Mbuti.DG     Korean Mitsusawa Chidorigakubo     -0.001103     -2.092   41060  41792 663708 
+result:   Mbuti.DG     Oroqen Iyai Funadomari      0.003375      6.885   46104  43805 681202 
+result:   Mbuti.DG     Oroqen Iyai Chidorigakubo      0.002303      5.389   45284  43715 681202 
+result:   Mbuti.DG     Oroqen Iyai Chidorigakubo      0.002303      5.389   45284  43715 681202 
+result:   Mbuti.DG     Oroqen Iyai Mitsusawa      0.003766      8.063   46075  43510 681202 
+result:   Mbuti.DG     Oroqen Iyai Todoroki     -0.000106     -0.250   41712  41784 681202 
+result:   Mbuti.DG     Oroqen Todoroki Funadomari      0.003481      6.718   46660  44289 681202 
+result:   Mbuti.DG     Oroqen Todoroki Chidorigakubo      0.002409      5.065   45695  44054 681202 
+result:   Mbuti.DG     Oroqen Todoroki Mitsusawa      0.003872      7.746   46493  43855 681202 
+result:   Mbuti.DG     Oroqen Chidorigakubo Funadomari      0.001072      1.999   43929  43199 681202 
+result:   Mbuti.DG     Oroqen Mitsusawa Funadomari     -0.000391     -0.756   43550  43816 681202 
+result:   Mbuti.DG     Oroqen Mitsusawa Chidorigakubo     -0.001463     -3.032   42029  43025 681202 
+##end of qpDstat:       12.133 seconds cpu     1888.424 Mbytes in use

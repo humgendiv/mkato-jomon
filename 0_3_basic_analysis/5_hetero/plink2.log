@@ -1,0 +1,24 @@
+PLINK v2.00a6LM AVX2 Intel (5 Oct 2023)
+Options in effect:
+  --bfile /home/mkato/hdd_data/0_4_analysis/2_Treemix/merged_with_1240K.targetpops
+  --het
+
+Hostname: humgendiv
+Working directory: /home/mkato/mkato-jomon/0_3_basic_analysis/5_hetero
+Start time: Tue Jun  3 17:30:28 2025
+
+Random number seed: 1748939428
+257567 MiB RAM detected, ~250463 available; reserving 128783 MiB for main
+workspace.
+Using up to 64 threads (change this with --threads).
+113 samples (38 females, 69 males, 6 ambiguous; 113 founders) loaded from
+/home/mkato/hdd_data/0_4_analysis/2_Treemix/merged_with_1240K.targetpops.fam.
+1023725 variants loaded from
+/home/mkato/hdd_data/0_4_analysis/2_Treemix/merged_with_1240K.targetpops.bim.
+1 binary phenotype loaded (0 cases, 107 controls).
+Calculating allele frequencies... done.
+Excluding 68330 variants on non-autosomes from --het.
+--het: done.
+--het: Results written to plink2.het .
+
+End time: Tue Jun  3 17:30:28 2025

@@ -1,0 +1,86 @@
+/home/mkato/Repo/AdmixTools/bin/qpWave: parameter file: 1p_qpWave2.par
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.geno
+snpname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.snp
+indivname: /home/mkato/hdd_data/0_4_analysis/1_qpWave/merged_outgroup_1240K.fixed.ind
+popleft: ./left.TS.pops
+popright: ./right.pops
+details: YES
+maxrank: 3
+##  /home/mkato/Repo/AdmixTools/bin/qpWave -p 1p_qpWave2.par
+## qpWave version: 1570
+ *** recommended that inbreed be explicitly set ***
+allsnps set NO.  It is recommended that allsnps be set explicitly
+ *** recommended that inbreed be explicitly set ***
+inbreed set NO
+packed geno read OK
+end of inpack
+
+left pops:
+Japan_MidAndLate_Jomon      3
+   Japan_Early_Jomon      2
+      Korea_Yondaedo      2
+
+right pops:
+            Mbuti.DG     14
+    Russia_Ust_Ishim      1
+   Russia_Kostenki14      1
+       Russia_MA1_HG      1
+              Papuan     28
+           Karitiana     14
+ Russia_DevilsCave_N      4
+      China_Tianyuan      1
+
+  0 Japan_MidAndLate_Jomon    3
+  1    Japan_Early_Jomon    2
+  2       Korea_Yondaedo    2
+  3             Mbuti.DG   14
+  4     Russia_Ust_Ishim    1
+  5    Russia_Kostenki14    1
+  6        Russia_MA1_HG    1
+  7               Papuan   28
+  8            Karitiana   14
+  9  Russia_DevilsCave_N    4
+ 10       China_Tianyuan    1
+jackknife block size:     0.050
+snps: 854875  indivs: 71
+number of blocks for block jackknife: 714
+Effective number of blocks:   608.593
+numsnps used: 70784
+f4info: 
+f4rank: 0 dof:     14 chisq:    84.735 tail:       3.70984946e-12 dofdiff:      0 chisqdiff:     0.000 taildiff:                    1
+
+f4info: 
+f4rank: 1 dof:      6 chisq:    19.704 tail:        0.00312611797 dofdiff:      8 chisqdiff:    65.031 taildiff:       4.75823524e-11
+B:
+          scale     1.000 
+Russia_Ust_Ishim     0.005 
+Russia_Kostenki14     0.821 
+  Russia_MA1_HG     0.921 
+         Papuan     0.027 
+      Karitiana     1.456 
+Russia_DevilsCave_N     1.624 
+ China_Tianyuan     0.847 
+A:
+          scale   646.329 
+Japan_Early_Jomon    -0.643 
+ Korea_Yondaedo     1.259 
+
+f4info: 
+f4rank: 2 dof:      0 chisq:     0.000 tail:                    1 dofdiff:      6 chisqdiff:    19.704 taildiff:        0.00312611797
+B:
+          scale   570.805   620.358 
+Russia_Ust_Ishim    -0.234    -0.304 
+Russia_Kostenki14    -1.109     0.070 
+  Russia_MA1_HG    -0.503     1.354 
+         Papuan    -0.858    -1.066 
+      Karitiana    -1.229     1.280 
+Russia_DevilsCave_N    -1.325     1.512 
+ China_Tianyuan    -1.208     0.100 
+A:
+          scale     1.414     1.414 
+Japan_Early_Jomon     1.414     0.000 
+ Korea_Yondaedo     0.000     1.414 
+
+##end of qpWave:       16.467 seconds cpu     1004.552 Mbytes in use

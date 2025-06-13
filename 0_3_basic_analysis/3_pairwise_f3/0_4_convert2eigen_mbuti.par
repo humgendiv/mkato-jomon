@@ -1,0 +1,7 @@
+genotypename:    /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.bed
+snpname:         /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.bim
+indivname:       /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.fam
+outputformat:    EIGENSTRAT
+genotypeoutname: /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.geno
+snpoutname:      /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.snp
+indivoutname:    /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/mbuti_1240K.ind

@@ -1,0 +1,1 @@
+/home/mkato/Repo/AdmixTools/bin/qpF4ratio -p ./3_qpF4ratio.par > qpF4ratio.log 2>&1
