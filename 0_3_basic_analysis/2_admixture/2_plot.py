@@ -8,15 +8,15 @@ import matplotlib.pyplot as plt
 
 # ----- User settings -----
 ADMIX_DIR      = "/home/mkato/mkato-jomon/0_3_basic_analysis/2_admixture"
-FAM_FILE       = "/home/mkato/hdd_data/0_3_basic_analysis/2_admixture/merged_with_1240K.targetpops.pruned.plot2.fam"
-PREFIX         = "merged_with_1240K.targetpops2.pruned"
+FAM_FILE       = "/home/mkato/hdd_data/0_3_basic_analysis/2_admixture/merged_with_1240K.targetpops.pruned.fam"
+PREFIX         = "merged_with_1240K.targetpops.pruned"
 OUTPUT_DIR     = os.path.join(ADMIX_DIR, "plots")
-Ks             = [3,4]       # 描きたい K 値のリスト
+Ks             = [3,]       # 描きたい K 値のリスト
 BAR_WIDTH_INCH = 0.25      # １本あたりのバー幅（inch）
 
 # グループ定義: {出力ファイル名: [含めたい FID のリスト]}
 GROUPS = {
-    "Jomon (high coverage)": ["Japan_Iyai_Jomon","Japan_Todoroki_Jomon", "Japan_Mitsusawa_Jomon", "Japan_Chidorigakubo_Jomon", "Japan_Funadomari_Jomon"],
+    "Jomon": ["Iyai","Todoroki", "Mitsusawa", "Chidorigakubo", "Funadomari", ],
     "Ancient Japanese & Korean": ["Japan_Rokutsu_Jomon", "Japan_Honshu_EarlyJomon", "Japan_Honshu_MidLateJomon", "Japan_Ikawazu_Jomon", "Japan_Sanganji_Jomon", "Japan_Shikoku_InitialJomon", "Japan_Shikoku_LateJomon", "Japan_KumaNishioda_Yayoi","Japan_Honshu_Kofun"],
     "Japanese & Korean": ["Japanese", "Korean"],
     "Modern East Asian": ["Ami", "Atayal", "Burmese", "Cambodian", "China_Lahu", "Dai", "Daur", "Han"],

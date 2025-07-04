@@ -1,0 +1,23 @@
+PLINK v2.00a6LM AVX2 Intel (5 Oct 2023)        www.cog-genomics.org/plink/2.0/
+(C) 2005-2023 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to plink2.log.
+Options in effect:
+  --bfile /home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops
+  --het
+
+Start time: Mon Jun 30 15:58:33 2025
+257567 MiB RAM detected, ~18789 available; reserving 18725 MiB for main
+workspace.
+Using up to 64 threads (change this with --threads).
+151 samples (53 females, 85 males, 13 ambiguous; 151 founders) loaded from
+/home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops.fam.
+974001 variants loaded from
+/home/mkato/hdd_data/0_3_basic_analysis/3_pairwise_f3/merged_with_1240K.targetpops.bim.
+1 binary phenotype loaded (13 cases, 138 controls).
+Calculating allele frequencies... 0%6%13%20%26%33%40%47%53%60%67%74%80%87%94%done.
+Excluding 37113 variants on non-autosomes from --het.
+--het: 0%6%13%20%27%34%41%48%55%62%69%76%83%90%97%done.
+Warning: 5679 autosomal variants skipped because they were monomorphic. You may
+want to use --read-freq to provide more accurate allele frequency estimates.
+--het: Results written to plink2.het .
+End time: Mon Jun 30 15:58:33 2025

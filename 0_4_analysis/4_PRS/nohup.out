@@ -1,0 +1,166 @@
+2025-06-16 19:16:37,723 - INFO - Using 4 processes
+2025-06-16 19:16:37,724 - INFO - Excluding samples: ['C3', 'I4']
+2025-06-16 19:16:37,724 - INFO - Loading VCF data...
+2025-06-16 19:16:37,724 - INFO - Loading VCF data from /home/mkato/hdd_data/0_4_analysis/4_PRS/merged.prs.renamed.vcf...
+2025-06-16 19:16:37,724 - INFO - Found 6 samples
+2025-06-16 19:16:49,323 - INFO - Loaded 2215385 SNPs in 11.60 seconds
+2025-06-16 19:16:49,323 - INFO - Loading frequency VCF data from /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted_alfreq.vcf...
+2025-06-16 19:16:49,323 - INFO - Frequency VCF contains 104 samples
+2025-06-16 19:19:50,485 - INFO - Loaded frequency data for 8073387 SNPs in 181.16 seconds
+2025-06-16 19:19:50,485 - INFO - Target samples: ['F23', 'M3', 'I1', 'T5']
+2025-06-16 19:19:50,485 - INFO - Found 60 trait files
+2025-06-16 19:19:50,485 - INFO - Starting parallel processing...
+2025-06-16 19:29:01,522 - INFO - Completed GGT: 19823 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed UA: 18877 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed PT: 12014 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Neutro: 15749 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed FS: 9460 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed AG: 20784 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed MCH: 21694 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed WBC: 20942 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed BUN: 20522 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Lym: 15010 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Hb: 16100 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed LVM: 10884 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed AST: 17350 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed DBP: 18874 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed BMI: 40468 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Eosino: 16255 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Height: 78140 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed MCHC: 15267 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed eGFR: 28026 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed TBil: 13169 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed NAP: 21803 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Plt: 23920 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed Alb: 15494 valid SNPs
+2025-06-16 19:29:01,522 - INFO - Completed TC: 15962 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Ca: 12919 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed SBP: 23491 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Mono: 16071 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed MCV: 23488 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed LVDd: 10218 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed ZTT: 11063 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed ALT: 15519 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed TG: 18234 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed P: 11224 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Baso: 15159 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed CRP: 17518 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed PP: 16675 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Ht: 16867 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed EF: 9183 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed TP: 20571 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed CK: 19578 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed RWT: 9417 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed EA: 9198 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed IVS: 9257 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed HbA1c: 12939 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed BS: 13554 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Na: 15475 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Fbg: 9291 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed LVMI: 9891 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed RBC: 20977 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed LVDs: 10418 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed MAP: 21724 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed LDL-C: 14452 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed ALP: 17807 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed APTT: 10210 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed PW: 10077 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed Cl: 17827 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed sCr: 27135 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed LDH: 16097 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed K: 16513 valid SNPs
+2025-06-16 19:29:01,523 - INFO - Completed HDL-C: 18082 valid SNPs
+2025-06-16 19:29:01,524 - INFO - Processing completed in 551.04 seconds
+2025-06-16 19:29:01,524 - INFO - Successful traits: 60
+2025-06-16 19:29:01,524 - INFO - Failed traits: 0
+2025-06-16 19:29:01,524 - INFO - Average valid SNPs per trait: 17578
+2025-06-16 19:29:01,524 - INFO - All traits processed successfully!
+2025-06-16 19:51:12,895 - INFO - Using 4 processes
+2025-06-16 19:51:12,896 - INFO - Excluding samples: ['C3', 'I4']
+2025-06-16 19:51:12,896 - INFO - Loading VCF data...
+2025-06-16 19:51:12,896 - INFO - Loading VCF data from /home/mkato/hdd_data/0_4_analysis/4_PRS/merged.prs.renamed.vcf...
+2025-06-16 19:51:12,896 - INFO - Found 6 samples
+2025-06-16 19:51:23,957 - INFO - Loaded 2215385 SNPs in 11.06 seconds
+2025-06-16 19:51:23,957 - INFO - Loading frequency VCF data from /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted_alfreq.vcf...
+2025-06-16 19:51:23,958 - INFO - Frequency VCF contains 104 samples
+2025-06-16 19:54:23,840 - INFO - Loaded frequency data for 8073387 SNPs in 179.88 seconds
+2025-06-16 19:54:23,840 - INFO - Target samples: ['F23', 'M3', 'I1', 'T5']
+2025-06-16 19:54:23,840 - INFO - Found 60 trait files
+2025-06-16 19:54:23,840 - INFO - Starting parallel processing...
+2025-06-16 20:03:34,769 - INFO - Completed GGT: 19823 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed UA: 18877 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed PT: 12014 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Neutro: 15749 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed FS: 9460 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed AG: 20784 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed MCH: 21694 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed WBC: 20942 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed BUN: 20522 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Lym: 15010 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Hb: 16100 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed LVM: 10884 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed AST: 17350 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed DBP: 18874 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed BMI: 40468 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Eosino: 16255 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Height: 78140 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed MCHC: 15267 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed eGFR: 28026 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed TBil: 13169 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed NAP: 21803 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Plt: 23920 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Alb: 15494 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed TC: 15962 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Ca: 12919 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed SBP: 23491 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed Mono: 16071 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed MCV: 23488 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed LVDd: 10218 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed ZTT: 11063 valid SNPs
+2025-06-16 20:03:34,770 - INFO - Completed ALT: 15519 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed TG: 18234 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed P: 11224 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed Baso: 15159 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed CRP: 17518 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed PP: 16675 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed Ht: 16867 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed EF: 9183 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed TP: 20571 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed CK: 19578 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed RWT: 9417 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed EA: 9198 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed IVS: 9257 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed HbA1c: 12939 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed BS: 13554 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed Na: 15475 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed Fbg: 9291 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed LVMI: 9891 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed RBC: 20977 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed LVDs: 10418 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed MAP: 21724 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed LDL-C: 14452 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed ALP: 17807 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed APTT: 10210 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed PW: 10077 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed Cl: 17827 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed sCr: 27135 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed LDH: 16097 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed K: 16513 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Completed HDL-C: 18082 valid SNPs
+2025-06-16 20:03:34,771 - INFO - Processing completed in 550.93 seconds
+2025-06-16 20:03:34,771 - INFO - Successful traits: 60
+2025-06-16 20:03:34,771 - INFO - Failed traits: 0
+2025-06-16 20:03:34,771 - INFO - Average valid SNPs per trait: 17578
+2025-06-16 20:03:34,771 - INFO - All traits processed successfully!
+2025-06-16 20:10:52,883 - INFO - Using 8 processes
+2025-06-16 20:10:52,883 - INFO - Excluding samples: ['C3', 'I4']
+2025-06-16 20:10:52,883 - INFO - Loading VCF data...
+2025-06-16 20:10:52,883 - INFO - Loading VCF data from /home/mkato/hdd_data/0_4_analysis/4_PRS/merged.prs.renamed.vcf...
+2025-06-16 20:10:52,884 - INFO - Found 6 samples
+2025-06-16 20:11:04,257 - INFO - Loaded 2215385 SNPs in 11.37 seconds
+2025-06-16 20:11:04,257 - INFO - Loading frequency VCF data from /home/mkato/hdd_data/data/Genomes1000/jptvcf_bed_extracted/merged/m_jpt_extracted_alfreq.vcf...
+2025-06-16 20:11:04,257 - INFO - Frequency VCF contains 104 samples
+2025-06-16 20:14:05,461 - INFO - Loaded frequency data for 8073387 SNPs in 181.20 seconds
+2025-06-16 20:14:05,461 - INFO - Target samples: ['F23', 'M3', 'I1', 'T5']
+2025-06-16 20:14:05,461 - INFO - Found 60 trait files
+2025-06-16 20:14:05,461 - INFO - Starting parallel processing...

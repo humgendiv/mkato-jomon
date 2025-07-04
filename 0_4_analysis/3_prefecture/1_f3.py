@@ -20,7 +20,7 @@ import pandas as pd
 POP_FREQ_FILE   = "/home/mkato/hdd_data/0_4_analysis/3_prefecture/pop_freq.tsv"
 PREF_DIR        = "/home/mkato/hdd_data/0_4_analysis/3_prefecture/prefectural_afreq_data"
 OUT_FILE      = "outgroup_f3_3x47.tsv"
-JOMON_POPS      = ["C3","F23","I1","I4","M3","T5"]
+JOMON_POPS      = ["Chidorigakubo","Funadomari","Iyai","Mitsusawa","Todoroki",]
 OUTGROUP        = "Mbuti"
 # --------------------------------
 

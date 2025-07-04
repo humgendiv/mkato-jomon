@@ -14,8 +14,7 @@ for file in "$INPUT_DIR"/*.vcf.gz; do
   (
     base=$(basename "$file")
     echo "[PROCESS] Removing FORMAT from $base"
-    bcftools annotate -x FORMAT/AD,FORMAT/PL,FORMAT/AF,FORMAT/F2R1,FORMAT/F1R2,FORMAT/GP,FORMAT/PRI,FORMAT/SB,FORMAT/MB \
-      -Oz -o "$NOAD_DIR/$base" "$file"
+    bcftools annotate -x ^FORMAT/GT -Oz -o "$NOAD_DIR/$base" "$file"
     bcftools index -t "$NOAD_DIR/$base"
   ) &
 done
@@ -36,7 +35,7 @@ wait
 
 echo "[STEP 3] Merging all cleaned VCFs..."
 # まずマージを実行して一時ファイルに保存
-bcftools merge -m all --missing-to-ref -Oz -o "$MERGED_VCF.tmp" "$CLEAN_DIR"/*.vcf.gz
+bcftools merge -m all -Oz -o "$MERGED_VCF.tmp" "$CLEAN_DIR"/*.vcf.gz
 
 # ステップ4: IDをchr:posに統一
 echo "[STEP 4] Resetting ID to chr:pos..."

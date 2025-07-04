@@ -8,11 +8,11 @@ import matplotlib.pyplot as plt
 logfile = "./qp3pop.log"
 # Define the group order and their matching patterns
 group_order = [
-    ("Japan_Iyai_Jomon", re.compile("Japan_Iyai_Jomon")),
-    ("Japan_Todoroki_Jomon", re.compile("Japan_Todoroki_Jomon")),
-    ("Japan_Chidorigakubo_Jomon", re.compile("Japan_Chidorigakubo_Jomon")),
-    ("Japan_Mitsusawa_Jomon", re.compile("Japan_Mitsusawa_Jomon")),
-    ("Janan_Funadomari_Jomon", re.compile("Janan_Funadomari_Jomon")),
+    ("Iyai", re.compile("Iyai")),
+    ("Todoroki", re.compile("Todoroki")),
+    ("Chidorigakubo", re.compile("Chidorigakubo")),
+    ("Mitsusawa", re.compile("Mitsusawa")),
+    ("Funadomari", re.compile("Funadomari")),
     ("Jomon", re.compile("Jomon")),
     ("Yayoi", re.compile("Yayoi")),
     ("Kofun", re.compile("Kofun")),

@@ -1,1 +1,1 @@
-./0_2_LD-pruning.sh /home/mkato/hdd_data/0_4_analysis/2_Treemix/merged_with_1240K.targetpops.v4.2.noN.vcf.gz
+./0_2a_LD-pruning.sh /home/mkato/hdd_data/0_4_analysis/2_Treemix/merged_with_1240K.targetpops.v4.2.noN.vcf.gz

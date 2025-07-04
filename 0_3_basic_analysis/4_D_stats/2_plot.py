@@ -52,7 +52,7 @@ output_dir = "/home/mkato/mkato-jomon/0_3_basic_analysis/4_D_stats/plots"   # �
 df = parse_qpdstat_log(log_file)
 
 # 対象とするContinental集団
-target_continentals = ["Han", "Japanese", "Korean", "Oroqen"]
+target_continentals = ["Han", "Japanese", "Korean"]
 
 # プロットと保存
 for pop in target_continentals:

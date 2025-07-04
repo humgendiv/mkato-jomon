@@ -2,7 +2,7 @@
 # Admixture解析スクリプト（LD pruning + K=2〜10のCV付きアダプチャー）
 
 # 入力PLINKプレフィックス
-INPUT_PREFIX="/home/mkato/hdd_data/0_3_basic_analysis/2_admixture/merged_with_1240K.targetpops2"
+INPUT_PREFIX="/home/mkato/hdd_data/0_3_basic_analysis/2_admixture/merged_with_1240K.targetpops"
 # LDプルーニング後の出力プレフィックス
 PRUNED_PREFIX="${INPUT_PREFIX}.pruned"
 # 実行するKの範囲

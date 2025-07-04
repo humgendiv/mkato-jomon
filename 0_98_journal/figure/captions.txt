@@ -1,0 +1,22 @@
+Figure 1. Genomic profiles of the Classic Copán in the context of ancient and present-day American populations
+
+(A) Multidimensional scaling (MDS) plot for the matrix of outgroup-f3 statistics for all pairs of ancient and present-day populations. Populations are color-coded based on their geographic origins (see Figure S4), with the Classic Copán represented by a red triangle and the present-day Maya by a red diamond.
+(B) Geographic distributions of distinct ancestral components identified from ADMIXTURE analysis with K = 9. Pie charts represent the composition of different ancestors in ancient and present-day American populations. A full detail of the results at the individual level is presented in Figure S7.
+(C) Ancestral compositions at K = 9 across ancient individuals from Aridoamerica and Central America, as well as those from present-day populations in Mexico. Ancient and present-day individuals are grouped based on their geographic contexts and sorted by their associated dates within each geographic group, with the oldest on the left and the most recent on the right. See also Figures S4–S8 and Table S1.
+
+Figure 2. Rankings of ancient and present-day populations based on their significant genetic affinities to the Classic Copán and the other Maya populations
+
+The genetic affinities are tested using f4(Mbuti, X; Y, target), where the target is (A) the Classic Copán, (B) Late Archaic, (C) Chichén Itzá, (D) Colonial Maya from Campeche in Mexico, or (E) present-day Maya. The f4 tests are applied iteratively across 200 populations, with each population considered as X in turn, whereas the remaining 199 populations are treated as Y. The color gradation represents the frequency at which a population X exhibits an excess genetic affinity to the target population compared with the other 199 populations, with a Z score > 3.0. The top five populations are labeled on the map, with their rankings. Three populations from Siberia, AG2, MA1, and Tlingit—all of which are positioned with lower rankings in the tests—are included in the tests but are not shown on the map. See also Tables S1 and S2 and Data S2.
+
+Figure 3. Leiden clustering of 324 ancient American individuals
+
+The dendrogram represents the hierarchical relationships of seven major clusters and 20 subclusters. Each subcluster is labeled with its community membership, the color of the circle indicating individuals within the subcluster on the map, its broad geographic context, and the number of individuals from each region (in parentheses). Geographic labels referring to the “Maya” region are underlined. On the map, each circle represents an individual, with the color corresponding to their associated community membership. Individuals from the Maya region are highlighted by a black rectangle, where most are clustered into a community “1-1” (36 out of 41 individuals; nearly 90%). See also Figures S9–S13 and Table S1.
+
+Figure 4. Genetic ancestry of ancient and present-day Maya populations
+
+Bar plots show proportions of genetic ancestors in the Classic Copán, Chichén Itzá, Colonial Mexico, and present-day Maya population. Colors represent different ancestral sources for admixture modeling: Late Archaic (red) and highland Mexico (orange). Vertical bars represent ±1 SE estimated by qpAdm. See also Figures S14 and S15 and Tables S4 and S5.
+
+Figure 5. Temporal changes in population size across different geographic populations in the Americas
+
+Circles indicate estimated population sizes based on shared IBD segments identified within a five-individual window, with individuals arranged in chronological order within each geographic population. Lines represent smoothing splines fitted to the population size data. The time point when the Maya population reaches its peak size, along with the corresponding population size, is marked by gray dashed lines. See also Figures S9, S10, S16, and S17.
+
