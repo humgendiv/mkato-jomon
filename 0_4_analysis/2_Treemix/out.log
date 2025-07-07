@@ -10,7 +10,7 @@ Parameters as interpreted:
 
 Using zlib version: 1.2.11
 Warning: Expected at least 2 parts in INFO entry: ID=PR,Number=0,Type=Flag,Description="Provisional reference allele, may not be based on real reference genome">
-After filtering, kept 147 out of 147 Individuals
+After filtering, kept 115 out of 115 Individuals
 Outputting VCF file...
-After filtering, kept 898088 out of a possible 961499 Sites
-Run Time = 40.00 seconds
+After filtering, kept 904768 out of a possible 974001 Sites
+Run Time = 32.00 seconds

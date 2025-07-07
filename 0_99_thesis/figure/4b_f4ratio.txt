@@ -1,0 +1,10 @@
+ result:        Dai      Mbuti   Japanese       Iyai  :        Dai      Mbuti     Korean       Iyai     0.884576     0.024362     36.310    588031
+ result:        Dai      Mbuti   Japanese   Todoroki  :        Dai      Mbuti     Korean   Todoroki     0.815698     0.045478     17.936    410701
+ result:        Dai      Mbuti   Japanese Funadomari  :        Dai      Mbuti     Korean Funadomari     0.827952     0.045233     18.304    436839
+ result:        Dai      Mbuti   Japanese Chidorigakubo  :        Dai      Mbuti     Korean Chidorigakubo     0.806190     0.049345     16.338    428479
+ result:        Dai      Mbuti   Japanese  Mitsusawa  :        Dai      Mbuti     Korean  Mitsusawa     0.813796     0.049578     16.415    435903
+ result:        Dai      Mbuti   Japanese       Iyai  :        Dai      Mbuti        Han       Iyai     0.842267     0.010505     80.180    601334
+ result:        Dai      Mbuti   Japanese   Todoroki  :        Dai      Mbuti        Han   Todoroki     0.774059     0.024745     31.281    418449
+ result:        Dai      Mbuti   Japanese Funadomari  :        Dai      Mbuti        Han Funadomari     0.782397     0.024188     32.346    446388
+ result:        Dai      Mbuti   Japanese Chidorigakubo  :        Dai      Mbuti        Han Chidorigakubo     0.754340     0.027345     27.586    437661
+ result:        Dai      Mbuti   Japanese  Mitsusawa  :        Dai      Mbuti        Han  Mitsusawa     0.746557     0.027512     27.136    445455

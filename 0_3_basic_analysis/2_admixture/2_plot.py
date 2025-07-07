@@ -94,7 +94,7 @@ def plot_admixture(
             labels.append("")
         last = fid
     ax.set_xticks(xs)
-    ax.set_xticklabels(labels, rotation=90, fontsize=6)
+    ax.set_xticklabels(labels, rotation=90, fontsize=8)
 
     # 4) 境界線を引く位置を検出して黒線を追加
     boundaries = []
