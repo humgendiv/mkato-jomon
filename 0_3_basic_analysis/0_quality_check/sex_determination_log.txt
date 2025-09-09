@@ -1,0 +1,26 @@
+Processing: M3 (Size: 104G)
+  Counting X chromosome reads...
+  Counting Y chromosome reads...
+  Result: X=0, Y=0, RY_index=NA, Sex=No_XY_reads (Time: 0s)
+
+Processing: C3 (Size: 86G)
+  Counting X chromosome reads...
+  Counting Y chromosome reads...
+  Result: X=0, Y=0, RY_index=NA, Sex=No_XY_reads (Time: 0s)
+
+Processing: I18 (Size: 52G)
+  Counting X chromosome reads...
+  Counting Y chromosome reads...
+  Result: X=0, Y=0, RY_index=NA, Sex=No_XY_reads (Time: 0s)
+
+=== Summary ===
+Results saved to: sex_determination_results.txt
+
+=== Results ===
+Sample_ID  BAM_Path                                                                                             File_Size  X_reads  Y_reads  Total_XY  RY_index  Sex          Processing_time
+M3         /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam             104G       0        0        0         NA        No_XY_reads  0s
+C3         /home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam             86G        0        0        0         NA        No_XY_reads  0s
+I18        /home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam  52G        0        0        0         NA        No_XY_reads  0s
+
+=== Sex Distribution ===
+      3 No_XY_reads

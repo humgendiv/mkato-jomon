@@ -3,7 +3,6 @@ Chidorigakubo
 Funadomari
 Mitsusawa
 Todoroki
-Han
 Japanese
 Japan_Rokutsu_Jomon
 Japan_Honshu_EarlyJomon
@@ -16,5 +15,3 @@ Japan_Shikoku_InitialJomon
 Japan_Shikoku_LateJomon
 Korean
 Mbuti
-Dai
-Oroqen

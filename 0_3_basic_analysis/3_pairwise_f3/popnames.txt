@@ -1,7 +1,9 @@
-Chidorigakubo
-Funadomari
-Han
-Iyai
+Chidorigakubo3
+Funadomari23
+Iyai1
+Iyai15
+Iyai18
+Iyai4
 Japanese
 Japan_Honshu_EarlyJomon
 Japan_Honshu_Kofun
@@ -14,5 +16,5 @@ Japan_Shikoku_InitialJomon
 Japan_Shikoku_LateJomon
 Korean
 Mbuti
-Mitsusawa
-Todoroki
+Mitsusawa3
+Todoroki5

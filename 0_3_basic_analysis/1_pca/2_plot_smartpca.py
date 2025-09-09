@@ -3,17 +3,27 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 EVEC_PATH = "/home/mkato/hdd_data/0_3_basic_analysis/1_pca/pca_result.targetpops.evec"
-OUTPUT_PATH = "/home/mkato/mkato-jomon/0_3_basic_analysis/1_pca/pca_plot.png"
+OUTPUT_PATH_PC1_PC2 = "/home/mkato/mkato-jomon/0_3_basic_analysis/1_pca/pca_plot_PC1_PC2.png"
+OUTPUT_PATH_PC1_PC3 = "/home/mkato/mkato-jomon/0_3_basic_analysis/1_pca/pca_plot_PC1_PC3.png"
 
 CLASS_ORDER = ["Control", "Ancients", "Case"]  # ← 描画順を制御
 CLASS_CMAP = {
-    "Case": "gnuplot",
+    "Case": "twilight_shifted",
     "Ancients": "rainbow",
     "Control": "nipy_spectral",
 }
 
+# Case集団用の個別色指定
+CASE_COLORS = {
+    "Todoroki": "#12E655",     # 赤
+    "Chidorigakubo": "#4ECDC4",         # ターコイズ
+    "Mitsusawa": "#0E162E",       # 青
+    "Funadomari": "#F317D6", 
+    "Iyai": "#FF6347",  # トマト
+    }
+
 CLASS_MARKERS = {
-    "Case": ["*","d","X","8"],
+    "Case": ["*","*","*","*", "*"],
     "Ancients": ["s", "o", "v", "^", "<", ">", "p", "h"],
     "Control": ["s", "o", "^", "<", ">", "p", "h"],
 }
@@ -41,6 +51,7 @@ def load_evec(path):
                 "pop":   pop,
                 "PC1":   float(cols[1]),
                 "PC2":   float(cols[2]),
+                "PC3":   float(cols[3]),
                 "class": cols[-1],
             })
     return pd.DataFrame(records)
@@ -50,15 +61,23 @@ def build_shape_color_maps(df):
     pop2shape, pop2color = {}, {}
     for cls in CLASS_ORDER:
         pops = sorted(df.loc[df["class"] == cls, "pop"].unique())
-        cmap = plt.cm.get_cmap(CLASS_CMAP[cls], max(len(pops), 3))
-        color_idxs = np.linspace(0.2, 0.9, len(pops))
         shapes = CLASS_MARKERS[cls]
-        for i, pop in enumerate(pops):
-            pop2shape[pop] = shapes[i % len(shapes)]
-            pop2color[pop] = cmap(color_idxs[i])
+        
+        if cls == "Case":
+            # Case集団には個別色を指定
+            for i, pop in enumerate(pops):
+                pop2shape[pop] = shapes[i % len(shapes)]
+                pop2color[pop] = CASE_COLORS.get(pop, "#000000")  # デフォルト色は黒
+        else:
+            # それ以外はカラーマップを使用
+            cmap = plt.cm.get_cmap(CLASS_CMAP[cls], max(len(pops), 3))
+            color_idxs = np.linspace(0.2, 0.9, len(pops))
+            for i, pop in enumerate(pops):
+                pop2shape[pop] = shapes[i % len(shapes)]
+                pop2color[pop] = cmap(color_idxs[i])
     return pop2shape, pop2color
 
-def plot(df, out_png, figsize=(10, 8)):
+def plot(df, out_png, pc_x="PC1", pc_y="PC2", figsize=(10, 8)):
     fig, ax = plt.subplots(figsize=figsize)
     pop2shape, pop2color = build_shape_color_maps(df)
 
@@ -80,7 +99,7 @@ def plot(df, out_png, figsize=(10, 8)):
         for pop in pops:
             sub = cls_df[cls_df["pop"] == pop]
             facecolors = cls_face if cls_face is not None else pop2color[pop]
-            ax.scatter(sub["PC1"], sub["PC2"],
+            ax.scatter(sub[pc_x], sub[pc_y],
                     marker=pop2shape[pop],
                     c=pop2color[pop],
                     facecolors=facecolors,
@@ -90,9 +109,9 @@ def plot(df, out_png, figsize=(10, 8)):
                     alpha=cls_alpha,
                     label=pop)
 
-    ax.set_xlabel("PC1")
-    ax.set_ylabel("PC2")
-    #ax.set_title("PCA: PC1 vs PC2")
+    ax.set_xlabel(pc_x)
+    ax.set_ylabel(pc_y)
+    #ax.set_title(f"PCA: {pc_x} vs {pc_y}")
 
     # 凡例ハンドルとラベルを取得
     handles, labels = ax.get_legend_handles_labels()
@@ -118,10 +137,26 @@ def plot(df, out_png, figsize=(10, 8)):
             uniq_handles.append(hdl)
             uniq_labels.append(lbl)
 
-    # 凡例を描画
+    # 凡例を描画 - クラス区切りをつける
+    legend_handles = []
+    legend_labels = []
+    
+    for i, (label, handle) in enumerate(zip(uniq_labels, uniq_handles)):
+        # 前の要素のクラスと現在のクラスが異なる場合、空行を追加
+        if i > 0:
+            prev_class = pop2class[uniq_labels[i-1]]
+            curr_class = pop2class[label]
+            if prev_class != curr_class:
+                # 透明なダミーハンドル追加
+                legend_handles.append(plt.Line2D([0], [0], color='white', alpha=0))
+                legend_labels.append('')
+        
+        legend_handles.append(handle)
+        legend_labels.append(label)
+
     ax.legend(
-        uniq_handles,
-        uniq_labels,
+        legend_handles,
+        legend_labels,
         title="Population",
         bbox_to_anchor=(1.02, 1),
         loc="upper left",
@@ -134,4 +169,5 @@ def plot(df, out_png, figsize=(10, 8)):
 
 # Execute
 df = load_evec(EVEC_PATH)
-plot(df, OUTPUT_PATH)
+plot(df, OUTPUT_PATH_PC1_PC2, "PC1", "PC2")
+plot(df, OUTPUT_PATH_PC1_PC3, "PC1", "PC3")

@@ -1,0 +1,15 @@
+# F23
+/home/mkato/hdd_data/data/bam/share/F23.bam
+# Mabuni3
+/home/mkato/hdd_data/data/bam/share/FM020_sorted.bam
+# I15
+/home/mkato/hdd_data/data/bam/share/I15.bam
+# I1
+/home/mkato/hdd_data/data/bam/share/Iyai1/I1.bam
+# I4b
+/home/mkato/hdd_data/data/bam/share/Iyai4b_Dra.bam
+# T5
+/home/mkato/hdd_data/data/bam/share/T5_p1_p2_p3.bam
+/home/mkato/hdd_data/data/bam/share/Todo5_Dra.bam
+
+# /home/mkato/hdd_data/from_Ms.Mizuno/PG0365/clipped_bam

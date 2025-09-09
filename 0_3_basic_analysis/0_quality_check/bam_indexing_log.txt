@@ -1,0 +1,24 @@
+Starting BAM indexing process at 2025年  9月  8日 月曜日 14:24:31 JST
+
+[1] Processing: /home/mkato/hdd_data/data/bam/share/F23.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/F23.bam
+
+[2] Processing: /home/mkato/hdd_data/data/bam/share/FM020_sorted.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/FM020_sorted.bam
+
+[3] Processing: /home/mkato/hdd_data/data/bam/share/I15.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/I15.bam
+
+[4] Processing: /home/mkato/hdd_data/data/bam/share/Iyai1/I1.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/Iyai1/I1.bam
+
+[5] Processing: /home/mkato/hdd_data/data/bam/share/Iyai4b_Dra.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/Iyai4b_Dra.bam
+
+[6] Processing: /home/mkato/hdd_data/data/bam/share/T5_p1_p2_p3.bam
+Index already exists for /home/mkato/hdd_data/data/bam/share/T5_p1_p2_p3.bam
+
+[7] Processing: /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam
+Attempting to create index...
+Initial indexing failed. Checking if re-sorting is needed...
+Re-sorting BAM file to: /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.resorted.bam

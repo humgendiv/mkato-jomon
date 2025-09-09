@@ -1,0 +1,33 @@
+BAM file: /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam
+Checking header for chrX/chrY...
+@SQ	SN:chrX	LN:155270560
+@SQ	SN:chrY	LN:59373566
+Running: samtools view -c /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam chrX
+chrX count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+Running: samtools view -c /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam chrY
+chrY count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+----------------------------------------
+BAM file: /home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam
+Checking header for chrX/chrY...
+@SQ	SN:chrX	LN:155270560
+@SQ	SN:chrY	LN:59373566
+Running: samtools view -c /home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam chrX
+chrX count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+Running: samtools view -c /home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam chrY
+chrY count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+----------------------------------------
+BAM file: /home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam
+Checking header for chrX/chrY...
+@SQ	SN:chrX	LN:155270560
+@SQ	SN:chrY	LN:59373566
+Running: samtools view -c /home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam chrX
+chrX count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+Running: samtools view -c /home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam chrY
+chrY count: [E::idx_find_and_load] Could not retrieve index file for '/home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam'
+samtools view: Random alignment retrieval only works for indexed SAM.gz, BAM or CRAM files.
+----------------------------------------

@@ -8,6 +8,8 @@ Daur
 Han
 Hezhen
 Japanese
+Japan_Ikawazu_Jomon
+Japan_Sanganji_Jomon
 Japan_Honshu_Kofun
 Japan_KumaNishioda_Yayoi
 Chidorigakubo

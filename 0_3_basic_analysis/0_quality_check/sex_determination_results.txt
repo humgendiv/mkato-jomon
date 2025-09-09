@@ -1,0 +1,7 @@
+Sample_ID	BAM_Path	X_reads	Y_reads	Total_XY	RY_index	Sex
+F23	/home/mkato/hdd_data/data/bam/share/F23.bam	66795661	97781	66893442	.001461	Female
+Mabuni3	/home/mkato/hdd_data/data/bam/share/FM020_sorted.bam	55048719	13577621	68626340	.197848	Male
+I15	/home/mkato/hdd_data/data/bam/share/I15.bam	52303790	9991263	62295053	.160386	Male
+I1	/home/mkato/hdd_data/data/bam/share/Iyai1/I1.bam	114949649	332771	115282420	.002886	Female
+I4b	/home/mkato/hdd_data/data/bam/share/Iyai4b_Dra.bam	34798403	6833529	41631932	.164141	Male
+T5	/home/mkato/hdd_data/data/bam/share/T5_p1_p2_p3.bam	86118485	234307	86352792	.002713	Female

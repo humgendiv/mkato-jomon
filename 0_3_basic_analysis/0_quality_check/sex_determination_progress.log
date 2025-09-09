@@ -1,0 +1,29 @@
+Processing: M3 (Size: 104G)
+Note: Scanning entire file due to queryname sort order...
+  Counting chromosomes X and Y...
+  Result: X=65236923, Y=2113896, RY=.031386, Sex=Undetermined (Time: 2953s)
+
+Processing: C3 (Size: 86G)
+Note: Scanning entire file due to queryname sort order...
+  Counting chromosomes X and Y...
+  Result: X=43265241, Y=1370083, RY=.030695, Sex=Undetermined (Time: 2391s)
+
+Processing: I18 (Size: 52G)
+Note: Scanning entire file due to queryname sort order...
+  Counting chromosomes X and Y...
+  Result: X=5403855, Y=1302611, RY=.194232, Sex=Male (Time: 1226s)
+
+=== Results ===
+Sample_ID  BAM_Path                                                                                             File_Size  X_reads   Y_reads  Total_XY  RY_index  Sex           Processing_time
+M3         /home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam             104G       65236923  2113896  67350819  .031386   Undetermined  2953s
+C3         /home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam             86G        43265241  1370083  44635324  .030695   Undetermined  2391s
+I18        /home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam  52G        5403855   1302611  6706466   .194232   Male          1226s
+
+=== Summary ===
+      1 Male
+      2 Undetermined
+
+=== Note ===
+Based on the diagnostic scan of FM027-1 (first 50000 reads):
+- chrX: 1203 reads, chrY: 26 reads
+- RY index would be: 0.0212 (Undetermined)

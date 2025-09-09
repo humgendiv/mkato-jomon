@@ -1,0 +1,28 @@
+Jomon Archaeological Sites Information
+==================================================
+
+1. Iyai (居家以遺跡)
+   Location: Naganohara, Gunma
+   Coordinates: 36.56°N, 138.65°E
+   Period: Initial Jomon (5,000-4,000 BP)
+
+2. Todoroki (轟貝塚)
+   Location: Uto, Kumamoto
+   Coordinates: 32.69°N, 130.66°E
+   Period: Early Jomon (7,000-5,500 BP)
+
+3. Mitsusawa (三ツ沢遺跡)
+   Location: Yokohama, Kanagawa
+   Coordinates: 35.47°N, 139.62°E
+   Period: Middle Jomon (4,500-3,500 BP)
+
+4. Chidorigakubo (千鳥久保遺跡)
+   Location: Ota, Tokyo
+   Coordinates: 35.58°N, 139.7°E
+   Period: Middle Jomon (4,000-3,000 BP)
+
+5. Funadomari (船泊遺跡)
+   Location: Rebun Island, Hokkaido
+   Coordinates: 45.3°N, 141.05°E
+   Period: Late Jomon (3,800-3,500 BP)
+

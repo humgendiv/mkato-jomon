@@ -1,0 +1,7 @@
+BAM_Path	Size_GB	Header_SO	Index_Status	Sample_Sort_Check
+/home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam	104G	queryname	No	Not_sorted
+Appears_sorted
+/home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam	86G	queryname	No	Not_sorted
+Appears_sorted
+/home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam	52G	queryname	No	Not_sorted
+Appears_sorted

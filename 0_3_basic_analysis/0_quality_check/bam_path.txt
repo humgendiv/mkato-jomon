@@ -1,0 +1,7 @@
+# M3
+/home/mkato/hdd_data/data/sample_data/FM027/FM027-1_DS_PG0301_005_dedup.clip2.sorted.bam
+# C3
+/home/mkato/hdd_data/data/sample_data/FM027/FM027-2_DS_PG0301_005_dedup.clip2.sorted.bam
+# I18
+/home/mkato/hdd_data/from_Ms.Mizuno/hdd_1105/clipped_bam/FM031_SS_PG0355_002_dedup.clip2.sorted.bam
+

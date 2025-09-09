@@ -18,6 +18,17 @@ group_order = [
     ("Kofun", re.compile("Kofun")),
     ("Japanese", re.compile("Japanese")),
     ("Korea", re.compile("Korea")),
+    ("Han", re.compile("Han")),
+    ("Dai", re.compile("Dai")),
+    ("Burmese", re.compile("Burmese")),
+    ("Cambodian", re.compile("Cambodian")),
+    ("Hezhen", re.compile("Hezhen")),
+    ("Kinh", re.compile("Kinh")),
+    ("Mongola", re.compile("Mongola")),
+    ("Oroqen", re.compile("Oroqen")),
+    ("Thai", re.compile("Thai")),
+    ("Tu", re.compile("Tu")),
+    ("Xibo", re.compile("Xibo")),
 ]
 
 # --- Parse qp3pop log ---
